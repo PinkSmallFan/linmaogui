@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <title>密钥对的相关操作（keytool、openSSL) | WenChongAndJiaoKou</title>
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="shortcut icon" href="./">
+  <link rel="alternate" href="./atom.xml" title="WenChongAndJiaoKou">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link rel="shortcut icon" href="" />
+  <link rel="icon" href="" />
+  
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  
+  <!-- <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link href='//cdn.bootcss.com/node-waves/0.7.5/waves.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="./style.css">
+  <script>
+    function setLoadingBarProgress(num) {
+      document.getElementById('loading-bar').style.width=num+"%";
+    }
+  </script>
+</head>
+
+<body>
+    <div id="loading-bar-wrapper">
+  <div id="loading-bar"></div>
+</div>
+
+
+    <script>setLoadingBarProgress(20)</script>
+    <header class="l_header">
+	<div class='wrapper'>
+		<div class="nav-main container container--flex">
+			<a class="logo flat-box" href='./' >WenChongAndJiaoKou</a>
+				<div class='menu'>
+					<ul class='h-list'>
+            
+					</ul>
+					<div class='underline'></div>
+				</div>
+
+			
+			<ul class='switcher h-list'>
+				
+				<li class='s-menu'><a class="fas fa-bars fa-fw" href='javascript:void(0)'></a></li>
+			</ul>
+		</div>
+
+		<div class='nav-sub container container--flex'>
+			<a class="logo flat-box"></a>
+			<ul class='switcher h-list'>
+				<li class='s-comment'><a class="fas fa-comments fa-fw flat-box" href='javascript:void(0)'></a></li>
+				<li class='s-top'><a class="fas fa-arrow-circle-up fa-fw flat-box" href='javascript:void(0)'></a></li>
+				<li class='s-toc'><a class="fas fa-list fa-fw flat-box" href='javascript:void(0)'></a></li>
+			</ul>
+		</div>
+	</div>
+</header>
+	<aside class="menu-phone">
+		<nav>
+      <ul>
+          
+      </ul>
+		</nav>
+	</aside>
+
+    <script>setLoadingBarProgress(40);</script>
+    <div class="l_body">
+    <div class='container clearfix'>
+        <div class='l_main'>
+            <article id="post-2018-10-25-密钥对的相关操作（keytool、openSSL)" class="post white-box article-type-post" itemscope itemprop="blogPost">
+    <section class='meta'>
+        
+            <h1 class="title">密钥对的相关操作（keytool、openSSL)</h1>
+        
+        <time class="time">
+            <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+            2018-10-25
+        </time>
+        <div class="browse"><i class="fas fa-eye fa-fw" aria-hidden="true"></i>
+          <span id="busuanzi_value_page_pv"><i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span>
+        </div>
+        
+    
+    <div class='cats'>
+        <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+        
+    </div>
+
+
+    </section>
+
+    <section class="article typo">
+
+        <div class="article-entry" itemprop="articleBody">
+            <h2 id="cacerts"><a href="#cacerts" class="headerlink" title="cacerts"></a>cacerts</h2><h3 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h3><p>cacerts：trusted certificate authority (CA) certificates</p>
+<blockquote>
+<p>​    The <code>cacerts</code> file is a collection of trusted certificate authority (CA) certificates. Sun Microsystems™ includes a <code>cacerts</code> file with its SSL support in the Java™ Secure Socket Extension (JSSE) tool kit and JDK 1.4.x. It contains certificate references for well-known Certificate authorities, such as VeriSign™. Its format is the “keystore” format defined by Sun. An administrator can edit the <code>cacerts</code> file with a command line tool (also provided by Sun) called keytool. For more information about keytool, see the Sun Web site.</p>
+<p><strong>Note:</strong> The default password for the cacerts file supplied by Sun is <code>changeit</code>. You must use this password to view the contents or to import a new certificate. For security reasons, change the default password.</p>
+<p>The essential requirement is that the certificate authority that signed the HPE Service Manager server’s certificate must be in the list of certificate authorities named in this file. To use a self-issued server certificate created with OpenSSL or a tool such as Microsoft Certificate Server™, you must import the certificate for this private certificate authority into the <code>cacerts</code> file that the client uses for SSL. If you do not import the certificate, SSL connections fail because the Java SSL implementation does not recognize the certificate authority.</p>
+</blockquote>
+<p>​    简单的来说，cacerts是java用于接受受信任的证书已经证书链，cacerts默认包含有一些众所周知的权威证书，以及证书链。当你需要使用https协议，为你的服务添加ssl的时候，需要将你的证书和证书链导入cacerts（如果已经导入过了，就不需要了）。</p>
+<h2 id="keytool"><a href="#keytool" class="headerlink" title="keytool"></a>keytool</h2><h3 id="查看java自带的cacerts"><a href="#查看java自带的cacerts" class="headerlink" title="查看java自带的cacerts"></a>查看java自带的cacerts</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> Linux</span><br><span class="line">cd $JAVA_HOME/jre/lib/security</span><br><span class="line">keytool -list -storepass changeit -keystore "./cacerts"		# 查询所有的证书</span><br><span class="line">keytool -list -storepass changeit -keystore "./cacerts" |grep server </span><br><span class="line"><span class="meta">#</span> 查询alias带有server的证书</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> Windows</span><br><span class="line">cd %JAVA_HOME%/jre/lib/security</span><br><span class="line">keytool -list -storepass changeit -keystore "./cacerts"		# 查询所有的证书</span><br><span class="line">keytool -list -storepass changeit -keystore "./cacerts" |findstr /i server</span><br><span class="line"><span class="meta">#</span> 查询alias带有server的证书</span><br></pre></td></tr></table></figure>
+<h3 id="产生jks密钥对"><a href="#产生jks密钥对" class="headerlink" title="产生jks密钥对"></a>产生jks密钥对</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> 产生一个签名算法为SHA256withRSA的，密钥长度为2048，的RSA密钥对，即软证书server.jks</span><br><span class="line">keytool -keystore server.jks -genkey -alias xxx_server -keyalg RSA -sigalg SHA256withRSA -keysize 2048</span><br></pre></td></tr></table></figure>
+<h3 id="导出jks的证书"><a href="#导出jks的证书" class="headerlink" title="导出jks的证书"></a>导出jks的证书</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> 证书，即公钥</span><br><span class="line">keytool -export -alias server -keystore server.jks -rfc -file sign.cer</span><br></pre></td></tr></table></figure>
+<h3 id="导入证书到cacerts"><a href="#导入证书到cacerts" class="headerlink" title="导入证书到cacerts"></a>导入证书到cacerts</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd $JAVA_HOME/jre/lib/security</span><br><span class="line"><span class="meta">#</span> 将证书导入cacerts，并别名为server</span><br><span class="line">keytool -import -keystore "./cacerts" -alias server -trustcacerts -storepass changeit -file /var/tmp/certs/Server.cer</span><br></pre></td></tr></table></figure>
+<h3 id="在cacerts上删除证书"><a href="#在cacerts上删除证书" class="headerlink" title="在cacerts上删除证书"></a>在cacerts上删除证书</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd $JAVA_HOME/jre/lib/security</span><br><span class="line"><span class="meta">#</span> 删除命名为server的证书</span><br><span class="line">keytool -delete -alias server -keystore "./cacerts" -storepass changeit</span><br></pre></td></tr></table></figure>
+<h3 id="参数分析"><a href="#参数分析" class="headerlink" title="参数分析"></a>参数分析</h3><blockquote>
+<p>-genkey          在用户主目录中创建一个默认文件”.keystore” 的软证书,产生一个mykey的别名，其中包含用户的公钥、私钥和证书<br>(在没有指定生成位置的情况下,keystore会存在用户系统默认目录，如：对于window xp系统，会生成在系统的C:/Documents and Settings/UserName/文件名为“.keystore”)<br>-alias           产生别名，keytool将通过这个别名进行查找<br>-keystore        指定密钥库的名称(产生的各类信息将不在.keystore文件中)<br>-keyalg          指定密钥的算法 (如 RSA  DSA（如果不指定默认采用DSA），推荐采用RSA)<br>-validity        指定创建的证书有效期多少天<br>-keysize         指定密钥长度<br>-storepass       指定密钥库的密码(获取keystore信息所需的密码)<br>-keypass         指定别名条目的密码(私钥的密码)<br>-dname           指定证书拥有者信息<br>-list                显示密钥库中的证书信息<br>-v                   显示密钥库中的证书详细信息<br>-export          将别名指定的证书导出到文件<br>-file                参数指定导出到文件的文件名<br>-delete          删除密钥库中某条目<br>-printcert       查看导出的证书信息<br>-keypasswd   修改密钥库中指定条目口令<br>-storepasswd 修改keystore口令<br>-import          将已签名数字证书导入密钥库  </p>
+</blockquote>
+<p>证书拥有者信息</p>
+<blockquote>
+<p> 例如：  “CN=名字与姓氏,OU=组织单位名称,O=组织名称,L=城市或区域名称,ST=州或省份名称,C=单位的两字母国家代码”</p>
+</blockquote>
+<p>常用命令：</p>
+<blockquote>
+<p> keytool -export -alias 需要导出的别名 -keystore 指定keystore -file 指定导出的证书路径位置，及证书名称 -storepass 密码</p>
+<p>keytool -printcert -file yushan.crt</p>
+<p>keytool -delete -alias 指定需删除的别  -keystore 指定keystore  -storepass     密码</p>
+<p>keytool -list -v -keystore 指定keystore -storepass 密码</p>
+<p>keytool -import -alias 指定导入条目的别名 -keystore 指定keystore -file 需导入的证书</p>
+<p>keytool -storepasswd -keystore e:/yushan.keystore(需修改口令的keystore) -storepass 123456(原始密码) -new yushan(新密码)</p>
+<p>keytool -keypasswd -alias 需修改的别名 -keypass 旧密码 -new  新密码  -storepass keystore密码  -keystore sage</p>
+</blockquote>
+<blockquote>
+<p>下面是各选项的缺省值。<br>-alias “mykey”<br>-keyalg “DSA”<br>-keysize 1024<br>-validity 90<br>-keystore 用户宿主目录中名为 .keystore 的文件<br>-file 读时为标准输入，写时为标准输出 </p>
+</blockquote>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ol>
+<li>什么是cacerts： <a href="https://docs.microfocus.com/SM/9.50/Hybrid/Content/security/concepts/what_is_a_cacerts_file.htm" target="_blank" rel="noopener">https://docs.microfocus.com/SM/9.50/Hybrid/Content/security/concepts/what_is_a_cacerts_file.htm</a></li>
+</ol>
+
+        </div>
+
+        <section class='meta'>
+            <time class="time" itemprop="dateUpdated" datetime="2018-10-28T22:34:47+08:00" content="2018-10-28">
+                <i class="fas fa-pen fa-fw" aria-hidden="true"></i>
+                本文最后更新于：2018-10-28
+            </time>
+            
+                
+                <div class="tags">
+                    <i class="fas fa-tags fa-fw" aria-hidden="true"></i>
+                    <a class="tag" href="./tags/密码学/">密码学</a>
+                </div>
+            
+        </section>
+
+        
+            <div class="prev-next">
+                
+                    <section class="prev">
+                        <span class="art-item-left">
+                            <h6><i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;上一篇</h6>
+                            <h4>
+                                <a href="./2018/10/26/CTF/" rel="prev" title="实验吧ctf训练题库">
+                                  
+                                      实验吧ctf训练题库
+                                  
+                                </a>
+                            </h4>
+                            
+                                
+                                <h6 class="tags">
+                                    <i class="fas fa-tags fa-fw" aria-hidden="true"></i>
+                                    <a class="tag" href="./tags/CTF/">CTF</a>
+                                </h6>
+                            
+                        </span>
+                    </section>
+                
+                
+                    <section class="next">
+                        <span class="art-item-right" aria-hidden="true">
+                            <h6>下一篇&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
+                            <h4>
+                                <a href="./2018/10/24/PKI技术/" rel="prev" title="PKI技术">
+                                    
+                                        PKI技术
+                                    
+                                </a>
+                            </h4>
+                            
+                                
+                                <h6 class="tags">
+                                    <i class="fas fa-tags fa-fw" aria-hidden="true"></i>
+                                    <a class="tag" href="./tags/密码学/">密码学</a>
+                                </h6>
+                            
+                        </span>
+                    </section>
+                
+            </div>
+        
+
+    </section>
+
+</article>
+
+<br>
+
+<!-- 显示推荐文章和评论 -->
+
+
+<script>
+    window.subData = {
+        title: '密钥对的相关操作（keytool、openSSL)',
+        tools: true
+    }
+</script>
+
+
+        </div>
+        <aside class='l_side'>
+            
+
+        </aside>
+        <script>setLoadingBarProgress(60);</script>
+    </div>
+    </div>
+    <footer id="footer" class="clearfix">
+    
+    <br>
+    <div>博客内容遵循 <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="licenses">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></div>
+    <div>本站使用 <a href="https://xaoxuu.com/wiki/material-x/" target="_blank" class="codename">Material X</a> 作为主题，
+		总访问量为 <span id="busuanzi_value_site_pv"><i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span> 次。
+    </div>
+</footer>
+<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
+
+
+    <script>setLoadingBarProgress(80);</script>
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src='//cdn.bootcss.com/node-waves/0.7.5/waves.min.js'></script>
+<script src="//cdn.bootcss.com/scrollReveal.js/3.3.2/scrollreveal.min.js"></script>
+<!-- 访问统计 -->
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+<script src="./js/jquery.fitvids.js"></script>
+
+<script src="./js/search.js"></script>
+<script src="./js/app.js"></script>
+
+
+    
+    
+    
+
+
+    <script>setLoadingBarProgress(100);</script>
+</body>

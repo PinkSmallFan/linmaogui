@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <title>Tag: 密码学 | WenChongAndJiaoKou</title>
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="shortcut icon" href="./">
+  <link rel="alternate" href="./atom.xml" title="WenChongAndJiaoKou">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link rel="shortcut icon" href="" />
+  <link rel="icon" href="" />
+  
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  
+  <!-- <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link href='//cdn.bootcss.com/node-waves/0.7.5/waves.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="./style.css">
+  <script>
+    function setLoadingBarProgress(num) {
+      document.getElementById('loading-bar').style.width=num+"%";
+    }
+  </script>
+</head>
+
+<body>
+    <div id="loading-bar-wrapper">
+  <div id="loading-bar"></div>
+</div>
+
+
+    <script>setLoadingBarProgress(20)</script>
+    <header class="l_header">
+	<div class='wrapper'>
+		<div class="nav-main container container--flex">
+			<a class="logo flat-box" href='./' >WenChongAndJiaoKou</a>
+				<div class='menu'>
+					<ul class='h-list'>
+            
+					</ul>
+					<div class='underline'></div>
+				</div>
+
+			
+			<ul class='switcher h-list'>
+				
+				<li class='s-menu'><a class="fas fa-bars fa-fw" href='javascript:void(0)'></a></li>
+			</ul>
+		</div>
+
+		<div class='nav-sub container container--flex'>
+			<a class="logo flat-box"></a>
+			<ul class='switcher h-list'>
+				<li class='s-comment'><a class="fas fa-comments fa-fw flat-box" href='javascript:void(0)'></a></li>
+				<li class='s-top'><a class="fas fa-arrow-circle-up fa-fw flat-box" href='javascript:void(0)'></a></li>
+				<li class='s-toc'><a class="fas fa-list fa-fw flat-box" href='javascript:void(0)'></a></li>
+			</ul>
+		</div>
+	</div>
+</header>
+	<aside class="menu-phone">
+		<nav>
+      <ul>
+          
+      </ul>
+		</nav>
+	</aside>
+
+    <script>setLoadingBarProgress(40);</script>
+    <div class="l_body">
+    <div class='container clearfix'>
+        <div class='l_main'>
+            
+    <script>
+        window.subData= { title:'tag : 密码学'}
+    </script>
+
+
+<section class="post-list">
+    
+        <div class='post-wrapper'>
+            <article class="post revealno-title">
+                <section class="meta">
+                    <h2 class="title" style="color:#EF503A">
+                        <span class="fas fa-exclamation-triangle"></span>
+                        还剩最后一步就成功了
+                    </h2>
+                    <p>
+                        请按照下面的指示进行操作：
+                    </p>
+                </section>
+                <iframe frameborder="no" width=100% height=600 src="https://xaoxuu.com/wiki/material-x/#/?id=主题配置"></iframe>
+            </article>
+        </div>
+    
+    
+        <div class='post-wrapper'>
+            <article class="post reveal ">
+    <section class="meta">
+        <h2 class="title">
+            <a href="./2018/11/11/2018-11-11-实验吧（Decode）/">
+                
+                    实验吧（Decode）
+                
+            </a>
+        </h2>
+        <time class="time">
+            <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;2018-11-11
+        </time>
+        
+    
+    <div class='cats'>
+        <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+        
+    </div>
+
+
+    </section>
+
+    <section class="article typo">
+        <h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><p>Decode</p>
+<blockquote>
+<p>0x253464253534253435253335253433253661253435253737253464253531253666253738253464253434253637253462253466253534253662253462253464253534253435253738253433253661253435253737253466253531253666253738253464253434253435253462253464253534253435253332253433253661253435253738253464253531253666253738253464253534253535253462253464253534253431253330253433253661253435253737253465253531253666253738253464253661253435253462253466253534253633253462253464253534253435253737253433253661253662253334253433253661253662253333253433253661253435253738253465253431253364253364</p>
+</blockquote>
+<h3 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h3><p>首先，查看这段编码，有什么异常，我们可以发现253x出现得比较频繁，16进制25转为十进制为37，在ASCII即%，那么可以想到的是URL</p>
+<h4 id="十六进制转ASCII编码"><a href="#十六进制转ASCII编码" class="headerlink" title="十六进制转ASCII编码"></a>十六进制转ASCII编码</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">hex16=<span class="number">253464253534253435253335253433253661253435253737253464253531253666253738253464253434253637253462253466253534253662253462253464253534253435253738253433253661253435253737253466253531253666253738253464253434253435253462253464253534253435253332253433253661253435253738253464253531253666253738253464253534253535253462253464253534253431253330253433253661253435253737253465253531253666253738253464253661253435253462253466253534253633253462253464253534253435253737253433253661253662253334253433253661253662253333253433253661253435253738253465253431253364253364</span></span><br><span class="line">d = [chr(int(b, <span class="number">16</span>)) <span class="keyword">for</span> b <span class="keyword">in</span> [hex16[i:i+<span class="number">2</span>] <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>, len(hex16), <span class="number">2</span>)]]</span><br><span class="line"><span class="comment"># ['%', '4', 'd', '%', '5', '4', '%', '4', '5', '%', '3', '5', '%', '4', '3', '%', '6', 'a', '%', '4', '5', '%', '7', '7', '%', '4', 'd', '%', '5', '1', '%', '6', 'f', '%', '7', '8', '%', '4', 'd', '%', '4', '4', '%', '6', '7', '%', '4', 'b', '%', '4', 'f', '%', '5', '4', '%', '6', 'b', '%', '4', 'b', '%', '4', 'd', '%', '5', '4', '%', '4', '5', '%', '7', '8', '%', '4', '3', '%', '6', 'a', '%', '4', '5', '%', '7', '7', '%', '4', 'f', '%', '5', '1', '%', '6', 'f', '%', '7', '8', '%', '4', 'd', '%', '4', '4', '%', '4', '5', '%', '4', 'b', '%', '4', 'd', '%', '5', '4', '%', '4', '5', '%', '3', '2', '%', '4', '3', '%', '6', 'a', '%', '4', '5', '%', '7', '8', '%', '4', 'd', '%', '5', '1', '%', '6', 'f', '%', '7', '8', '%', '4', 'd', '%', '5', '4', '%', '5', '5', '%', '4', 'b', '%', '4', 'd', '%', '5', '4', '%', '4', '1', '%', '3', '0', '%', '4', '3', '%', '6', 'a', '%', '4', '5', '%', '7', '7', '%', '4', 'e', '%', '5', '1', '%', '6', 'f', '%', '7', '8', '%', '4', 'd', '%', '6', 'a', '%', '4', '5', '%', '4', 'b', '%', '4', 'f', '%', '5', '4', '%', '6', '3', '%', '4', 'b', '%', '4', 'd', '%', '5', '4', '%', '4', '5', '%', '7', '7', '%', '4', '3', '%', '6', 'a', '%', '6', 'b', '%', '3', '4', '%', '4', '3', '%', '6', 'a', '%', '6', 'b', '%', '3', '3', '%', '4', '3', '%', '6', 'a', '%', '4', '5', '%', '7', '8', '%', '4', 'e', '%', '4', '1', '%', '3', 'd', '%', '3', 'd']"</span></span><br><span class="line"></span><br><span class="line">a=<span class="string">''</span></span><br><span class="line"><span class="keyword">for</span> j <span class="keyword">in</span> range(len(d)):</span><br><span class="line">    a+=d[j]</span><br><span class="line">a</span><br><span class="line"><span class="comment"># %4d%54%45%35%43%6a%45%77%4d%51%6f%78%4d%44%67%4b%4f%54%6b%4b%4d%54%45%78%43%6a%45%77%4f%51%6f%78%4d%44%45%4b%4d%54%45%32%43%6a%45%78%4d%51%6f%78%4d%54%55%4b%4d%54%41%30%43%6a%45%77%4e%51%6f%78%4d%6a%45%4b%4f%54%63%4b%4d%54%45%77%43%6a%6b%34%43%6a%6b%33%43%6a%45%78%4e%41%3d%3d</span></span><br></pre></td></tr></table></figure>
+<h4 id="ASCII编码转URL编码"><a href="#ASCII编码转URL编码" class="headerlink" title="ASCII编码转URL编码"></a>ASCII编码转URL编码</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> urllib.parse <span class="keyword">import</span> unquote</span><br><span class="line">a=<span class="string">'%4d%54%45%35%43%6a%45%77%4d%51%6f%78%4d%44%67%4b%4f%54%6b%4b%4d%54%45%78%43%6a%45%77%4f%51%6f%78%4d%44%45%4b%4d%54%45%32%43%6a%45%78%4d%51%6f%78%4d%54%55%4b%4d%54%41%30%43%6a%45%77%4e%51%6f%78%4d%6a%45%4b%4f%54%63%4b%4d%54%45%77%43%6a%6b%34%43%6a%6b%33%43%6a%45%78%4e%41%3d%3d'</span></span><br><span class="line">test=unquote(a,<span class="string">'utf-8'</span>)</span><br><span class="line">test</span><br><span class="line"><span class="comment"># 'MTE5CjEwMQoxMDgKOTkKMTExCjEwOQoxMDEKMTE2CjExMQoxMTUKMTA0CjEwNQoxMjEKOTcKMTEwCjk4Cjk3CjExNA=='</span></span><br></pre></td></tr></table></figure>
+<h4 id="Base64值解码"><a href="#Base64值解码" class="headerlink" title="Base64值解码"></a>Base64值解码</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"> <span class="keyword">import</span> base64</span><br><span class="line">test = <span class="string">'MTE5CjEwMQoxMDgKOTkKMTExCjEwOQoxMDEKMTE2CjExMQoxMTUKMTA0CjEwNQoxMjEKOTcKMTEwCjk4Cjk3CjExNA=='</span></span><br><span class="line">data = base64.b64decode(test)</span><br><span class="line">data</span><br><span class="line"><span class="string">b'119\n101\n108\n99\n111\n109\n101\n116\n111\n115\n104\n105\n121\n97\n110\n98\n97\n114'</span></span><br></pre></td></tr></table></figure>
+<h4 id="ASCII编码"><a href="#ASCII编码" class="headerlink" title="ASCII编码"></a>ASCII编码</h4><p>对比ASCII表，可得</p>
+<p>welcometoshiyanbar</p>
+<p><img src="E:\blog\lmg\PinkSmallFan\project\source\uploads\c2fdfc039245d688c56332adacc27d1ed21b2451.jpg" alt="img"></p>
+<blockquote>
+<p>b = 123<br>bin(int(b))<br>‘0b1111011’<br>oct(int(b))<br>‘0o173’<br>hex(int(b))<br>‘0x7b’<br>int(b)</p>
+</blockquote>
+
+        
+
+        
+            <div class="full-width auto-padding tags">
+                
+                    <a href="./tags/密码学/"><i class="fas fa-tag fa-fw"></i>&nbsp;密码学</a>
+                
+                    <a href="./tags/other/"><i class="fas fa-tag fa-fw"></i>&nbsp;other</a>
+                
+                    <a href="./tags/实验吧/"><i class="fas fa-tag fa-fw"></i>&nbsp;实验吧</a>
+                
+            </div>
+        
+    </section>
+</article>
+
+        </div>
+    
+        <div class='post-wrapper'>
+            <article class="post reveal ">
+    <section class="meta">
+        <h2 class="title">
+            <a href="./2018/11/11/2018-11-11-实验吧（我喜欢的培根）/">
+                
+                    实验吧（我喜欢的培根）
+                
+            </a>
+        </h2>
+        <time class="time">
+            <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;2018-11-11
+        </time>
+        
+    
+    <div class='cats'>
+        <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+        
+    </div>
+
+
+    </section>
+
+    <section class="article typo">
+        <h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><p>我喜欢的培根，key: CTF{}</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-- --- .-. ... . ..--.- .. ... ..--.- -.-. --- --- .-.. ..--.- -... ..- - ..--.- -... .- -.-. --- -. ..--.- .. ... ..--.- -.-. --- --- .-.. . .-. ..--.- -.. -.-. -.-. -.. -.-. -.-. -.-. -.. -.. -.. -.-. -.. -.-. -.-. -.-. -.. -.. -.-. -.-. -.-. -.-. -.-. -.-. -.-. -.-. -.-. -.. -.. -.-. -.. -.-. -.-. -.-. -.-. -.. -.-. -.-. -.-. -.-. -.-. / -.-. -.. -.-. -.-. -.-. -.. -.-. -.-. -.. -.-. / -.-. -.-. -.-. -.. -.-. -.-. -.. -.. -.. -.-. -.-. -.. -.. -.. -.-. -.-. -.. -.-. -.. -..</span><br></pre></td></tr></table></figure>
+<h3 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h3><h4 id="莫斯密码"><a href="#莫斯密码" class="headerlink" title="莫斯密码"></a>莫斯密码</h4><p>自己编写一个morse解码</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/env python</span></span><br><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">&#123;</span></span><br><span class="line"><span class="string">Title:MorseCode</span></span><br><span class="line"><span class="string">Author:PinkSmallFan</span></span><br><span class="line"><span class="string">Type:crypto</span></span><br><span class="line"><span class="string">Detail:莫斯密码</span></span><br><span class="line"><span class="string">&#125;</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">morse</span><span class="params">(lstr)</span>:</span></span><br><span class="line">    flag = <span class="string">''</span></span><br><span class="line">    data = lstr.split(<span class="string">' '</span>)</span><br><span class="line">    dict = &#123;<span class="string">'.-'</span>: <span class="string">'A'</span>,</span><br><span class="line">            <span class="string">'-...'</span>: <span class="string">'B'</span>,</span><br><span class="line">            <span class="string">'-.-.'</span>: <span class="string">'C'</span>,</span><br><span class="line">            <span class="string">'-..'</span>:<span class="string">'D'</span>,</span><br><span class="line">            <span class="string">'.'</span>:<span class="string">'E'</span>,</span><br><span class="line">            <span class="string">'..-.'</span>:<span class="string">'F'</span>,</span><br><span class="line">            <span class="string">'--.'</span>: <span class="string">'G'</span>,</span><br><span class="line">            <span class="string">'....'</span>: <span class="string">'H'</span>,</span><br><span class="line">            <span class="string">'..'</span>: <span class="string">'I'</span>,</span><br><span class="line">            <span class="string">'.---'</span>:<span class="string">'J'</span>,</span><br><span class="line">            <span class="string">'-.-'</span>: <span class="string">'K'</span>,</span><br><span class="line">            <span class="string">'.-..'</span>: <span class="string">'L'</span>,</span><br><span class="line">            <span class="string">'--'</span>: <span class="string">'M'</span>,</span><br><span class="line">            <span class="string">'-.'</span>: <span class="string">'N'</span>,</span><br><span class="line">            <span class="string">'---'</span>: <span class="string">'O'</span>,</span><br><span class="line">            <span class="string">'.--.'</span>: <span class="string">'P'</span>,</span><br><span class="line">            <span class="string">'--.-'</span>: <span class="string">'Q'</span>,</span><br><span class="line">            <span class="string">'.-.'</span>: <span class="string">'R'</span>,</span><br><span class="line">            <span class="string">'...'</span>: <span class="string">'S'</span>,</span><br><span class="line">            <span class="string">'-'</span>: <span class="string">'T'</span>,</span><br><span class="line">            <span class="string">'..-'</span>: <span class="string">'U'</span>,</span><br><span class="line">            <span class="string">'...-'</span>: <span class="string">'V'</span>,</span><br><span class="line">            <span class="string">'.--'</span>: <span class="string">'W'</span>,</span><br><span class="line">            <span class="string">'-..-'</span>: <span class="string">'X'</span>,</span><br><span class="line">            <span class="string">'-.--'</span>: <span class="string">'Y'</span>,</span><br><span class="line">            <span class="string">'--..'</span>: <span class="string">'Z'</span>,</span><br><span class="line">            <span class="string">'.----'</span>: <span class="string">'1'</span>,</span><br><span class="line">            <span class="string">'..---'</span>: <span class="string">'2'</span>,</span><br><span class="line">            <span class="string">'...--'</span>: <span class="string">'3'</span>,</span><br><span class="line">            <span class="string">'....-'</span>: <span class="string">'4'</span>,</span><br><span class="line">            <span class="string">'.....'</span>: <span class="string">'5'</span>,</span><br><span class="line">            <span class="string">'-....'</span>: <span class="string">'6'</span>,</span><br><span class="line">            <span class="string">'--...'</span>: <span class="string">'7'</span>,</span><br><span class="line">            <span class="string">'---..'</span>: <span class="string">'8'</span>,</span><br><span class="line">            <span class="string">'----.'</span>: <span class="string">'9'</span>,</span><br><span class="line">            <span class="string">'-----'</span>: <span class="string">'0'</span>,</span><br><span class="line">            <span class="string">'..--..'</span>: <span class="string">'?'</span>,</span><br><span class="line">            <span class="string">'-..-.'</span>: <span class="string">'/'</span>,</span><br><span class="line">            <span class="string">'-.--.-'</span>: <span class="string">'()'</span>,</span><br><span class="line">            <span class="string">'-....-'</span>: <span class="string">'-'</span>,</span><br><span class="line">            <span class="string">'.-.-.-'</span>: <span class="string">'.'</span></span><br><span class="line">            &#125;;</span><br><span class="line">    <span class="keyword">for</span> item <span class="keyword">in</span> data:</span><br><span class="line">        flag+=dict[item]</span><br><span class="line">    <span class="keyword">return</span> flag</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">(lstr)</span>:</span></span><br><span class="line">    print(lstr)</span><br><span class="line">    result = morse(lstr)</span><br><span class="line">    print(result)</span><br><span class="line">    <span class="keyword">return</span> result</span><br><span class="line"></span><br><span class="line"><span class="comment">#  example</span></span><br><span class="line"><span class="comment"># print('helloworld')</span></span><br><span class="line"><span class="comment"># abc='-- --- .-. ... . ..--.- .. ... ..--.- -.-. --- --- .-.. ..--.- -... ..- - ..--.- -... .- -.-. --- -. ..--.- .. ... ..--.- -.-. --- --- .-.. . .-. ..--.- -.. -.-. -.-. -.. -.-. -.-. -.-. -.. -.. -.. -.-. -.. -.-. -.-. -.-. -.. -.. -.-. -.-. -.-. -.-. -.-. -.-. -.-. -.-. -.-. -.. -.. -.-. -.. -.-. -.-. -.-. -.-. -.. -.-. -.-. -.-. -.-. -.-. / -.-. -.. -.-. -.-. -.-. -.. -.-. -.-. -.. -.-. / -.-. -.-. -.-. -.. -.-. -.-. -.. -.. -.. -.-. -.-. -.. -.. -.. -.-. -.-. -.. -.-. -.. -..'</span></span><br><span class="line"><span class="comment"># main(abc)</span></span><br><span class="line"><span class="comment"># result为MORSE..--.-IS..--.-COOL..--.-BUT..--.-BACON..--.-IS..--.-COOLER..--.-DCCDCCCDDDCDCCCDDCCCCCCCCCDDCDCCCCDCCCCC/CDCCCDCCDC/CCCDCCDDDCCDDDCCDCDD</span></span><br></pre></td></tr></table></figure>
+<h4 id="培根密码"><a href="#培根密码" class="headerlink" title="培根密码"></a>培根密码</h4><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A/a</td>
+<td>aaaaa</td>
+<td>H/h</td>
+<td>aabbb</td>
+<td>O/o</td>
+<td>abbba</td>
+<td>V/v</td>
+<td>babab</td>
+</tr>
+<tr>
+<td>B/b</td>
+<td>aaaab</td>
+<td>I/i</td>
+<td>abaaa</td>
+<td>P/p</td>
+<td>abbbb</td>
+<td>W/w</td>
+<td>babba</td>
+</tr>
+<tr>
+<td>C/c</td>
+<td>aaaba</td>
+<td>J/j</td>
+<td>abaab</td>
+<td>Q/q</td>
+<td>baaaa</td>
+<td>X/x</td>
+<td>babbb</td>
+</tr>
+<tr>
+<td>D/d</td>
+<td>aaabb</td>
+<td>K/k</td>
+<td>ababa</td>
+<td>R/r</td>
+<td>baaab</td>
+<td>Y/y</td>
+<td>bbaaa</td>
+</tr>
+<tr>
+<td>E/e</td>
+<td>aabaa</td>
+<td>L/l</td>
+<td>ababb</td>
+<td>S/s</td>
+<td>baaba</td>
+<td>Z/z</td>
+<td>bbaab</td>
+</tr>
+<tr>
+<td>F/f</td>
+<td>aabab</td>
+<td>M/m</td>
+<td>abbaa</td>
+<td>T/t</td>
+<td>baabb</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>G/g</td>
+<td>aabba</td>
+<td>N/n</td>
+<td>abbab</td>
+<td>U/u</td>
+<td>babaa</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>将DCCDCCCDDDCDCCCDDCCCCCCCCCDDCDCCCCDCCCCC/CDCCCDCCDC/CCCDCCDDDCCDDDCCDCDD去掉反斜杠，五个为一组，D-&gt;a，C-&gt;b，进行培根密码解密</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/env python</span></span><br><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">&#123;</span></span><br><span class="line"><span class="string">Title:PeigenCode</span></span><br><span class="line"><span class="string">Author:PinkSmallFan</span></span><br><span class="line"><span class="string">Type:crypto</span></span><br><span class="line"><span class="string">Detail:培根密码</span></span><br><span class="line"><span class="string">&#125;</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">peigenDe</span><span class="params">(lstr)</span>:</span></span><br><span class="line">	dict = &#123;<span class="string">'aaaaa'</span>: <span class="string">'A'</span>,</span><br><span class="line">            <span class="string">'aaaab'</span>: <span class="string">'B'</span>,</span><br><span class="line">            <span class="string">'aaaba'</span>: <span class="string">'C'</span>,</span><br><span class="line">            <span class="string">'aaabb'</span>: <span class="string">'D'</span>,</span><br><span class="line">		    <span class="string">'aabaa'</span>: <span class="string">'E'</span>,</span><br><span class="line">		    <span class="string">'aabab'</span>: <span class="string">'F'</span>,</span><br><span class="line">		    <span class="string">'aabba'</span>: <span class="string">'G'</span>,</span><br><span class="line">			<span class="string">'aabbb'</span>: <span class="string">'H'</span>,</span><br><span class="line">		    <span class="string">'abaaa'</span>: <span class="string">'I'</span>,</span><br><span class="line">		    <span class="string">'abaab'</span>: <span class="string">'J'</span>,</span><br><span class="line">		    <span class="string">'ababa'</span>: <span class="string">'K'</span>,</span><br><span class="line">		    <span class="string">'ababb'</span>: <span class="string">'L'</span>,</span><br><span class="line">		    <span class="string">'abbaa'</span>: <span class="string">'M'</span>,</span><br><span class="line">		    <span class="string">'abbab'</span>: <span class="string">'N'</span>,</span><br><span class="line">		    <span class="string">'abbba'</span>: <span class="string">'O'</span>,</span><br><span class="line">		    <span class="string">'abbbb'</span>: <span class="string">'P'</span>,</span><br><span class="line">		    <span class="string">'baaaa'</span>: <span class="string">'Q'</span>,</span><br><span class="line">		    <span class="string">'baaab'</span>: <span class="string">'R'</span>,</span><br><span class="line">		    <span class="string">'baaba'</span>: <span class="string">'S'</span>,</span><br><span class="line">		    <span class="string">'baabb'</span>: <span class="string">'T'</span>,</span><br><span class="line">		    <span class="string">'babaa'</span>: <span class="string">'U'</span>,</span><br><span class="line">		    <span class="string">'babab'</span>: <span class="string">'V'</span>,</span><br><span class="line">		    <span class="string">'babba'</span>: <span class="string">'W'</span>,</span><br><span class="line">		    <span class="string">'babbb'</span>: <span class="string">'X'</span>,</span><br><span class="line">		    <span class="string">'bbaaa'</span>: <span class="string">'Y'</span>,</span><br><span class="line">		    <span class="string">'bbaab'</span>: <span class="string">'Z'</span></span><br><span class="line">		    &#125;;</span><br><span class="line">	size = len(lstr)</span><br><span class="line">	lenght = <span class="number">5</span></span><br><span class="line">	returnStr = <span class="string">''</span></span><br><span class="line">	<span class="keyword">for</span> i <span class="keyword">in</span> range(round(size/lenght)):</span><br><span class="line">		result=lstr[lenght*i:lenght*(i+<span class="number">1</span>)].lower()</span><br><span class="line">		returnStr += dict[result]</span><br><span class="line">	<span class="keyword">return</span> returnStr</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">(lstr)</span>:</span></span><br><span class="line">	print(lstr)</span><br><span class="line">	result = peigenDe(lstr)</span><br><span class="line">	print(result)</span><br><span class="line">	<span class="keyword">return</span> result</span><br><span class="line"></span><br><span class="line"><span class="comment"># example</span></span><br><span class="line"><span class="comment"># data = 'baabaaabbbabaaabbaaaaaaaaabbabaaaabaaaaaabaaabaabaaaabaabbbaabbbaababb'</span></span><br><span class="line"><span class="comment"># main(data)</span></span><br><span class="line"><span class="comment"># SHIYANBAISCOOL</span></span><br></pre></td></tr></table></figure>
+<p>PS：注意，之前含有的反斜杠，为空格，需要额外添加空格</p>
+<p>最后大小写试一试就ok啦~</p>
+
+        
+
+        
+            <div class="full-width auto-padding tags">
+                
+                    <a href="./tags/密码学/"><i class="fas fa-tag fa-fw"></i>&nbsp;密码学</a>
+                
+                    <a href="./tags/other/"><i class="fas fa-tag fa-fw"></i>&nbsp;other</a>
+                
+                    <a href="./tags/实验吧/"><i class="fas fa-tag fa-fw"></i>&nbsp;实验吧</a>
+                
+            </div>
+        
+    </section>
+</article>
+
+        </div>
+    
+        <div class='post-wrapper'>
+            <article class="post reveal ">
+    <section class="meta">
+        <h2 class="title">
+            <a href="./2018/11/11/2018-11-11-实验吧（困在栅栏里的爱）/">
+                
+                    实验吧（困在栅栏里的爱）
+                
+            </a>
+        </h2>
+        <time class="time">
+            <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;2018-11-11
+        </time>
+        
+    
+    <div class='cats'>
+        <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+        
+    </div>
+
+
+    </section>
+
+    <section class="article typo">
+        <h2 id="困在栅栏里的爱"><a href="#困在栅栏里的爱" class="headerlink" title="困在栅栏里的爱"></a>困在栅栏里的爱</h2><h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><p>最近一直在好奇一个问题，QWE到底等不等于ABC？</p>
+<p>-.- .. –.- .-.. .– - ..-. -.-. –.- –. -. … — — </p>
+<p>flag格式：CTF{xxx}</p>
+<p>题目地址：<a href="http://www.shiyanbar.com/ctf/1917" target="_blank" rel="noopener">http://www.shiyanbar.com/ctf/1917</a></p>
+<h3 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h3><h4 id="莫斯密码"><a href="#莫斯密码" class="headerlink" title="莫斯密码"></a>莫斯密码</h4><p>自己编写一个morse解码</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/env python</span></span><br><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">&#123;</span></span><br><span class="line"><span class="string">Title:MorseCode</span></span><br><span class="line"><span class="string">Author:PinkSmallFan</span></span><br><span class="line"><span class="string">Type:crypto</span></span><br><span class="line"><span class="string">Detail:莫斯密码</span></span><br><span class="line"><span class="string">&#125;</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">morse</span><span class="params">(lstr)</span>:</span></span><br><span class="line">    flag = <span class="string">''</span></span><br><span class="line">    data = lstr.split(<span class="string">' '</span>)</span><br><span class="line">    dict = &#123;<span class="string">'.-'</span>: <span class="string">'A'</span>,</span><br><span class="line">            <span class="string">'-...'</span>: <span class="string">'B'</span>,</span><br><span class="line">            <span class="string">'-.-.'</span>: <span class="string">'C'</span>,</span><br><span class="line">            <span class="string">'-..'</span>:<span class="string">'D'</span>,</span><br><span class="line">            <span class="string">'.'</span>:<span class="string">'E'</span>,</span><br><span class="line">            <span class="string">'..-.'</span>:<span class="string">'F'</span>,</span><br><span class="line">            <span class="string">'--.'</span>: <span class="string">'G'</span>,</span><br><span class="line">            <span class="string">'....'</span>: <span class="string">'H'</span>,</span><br><span class="line">            <span class="string">'..'</span>: <span class="string">'I'</span>,</span><br><span class="line">            <span class="string">'.---'</span>:<span class="string">'J'</span>,</span><br><span class="line">            <span class="string">'-.-'</span>: <span class="string">'K'</span>,</span><br><span class="line">            <span class="string">'.-..'</span>: <span class="string">'L'</span>,</span><br><span class="line">            <span class="string">'--'</span>: <span class="string">'M'</span>,</span><br><span class="line">            <span class="string">'-.'</span>: <span class="string">'N'</span>,</span><br><span class="line">            <span class="string">'---'</span>: <span class="string">'O'</span>,</span><br><span class="line">            <span class="string">'.--.'</span>: <span class="string">'P'</span>,</span><br><span class="line">            <span class="string">'--.-'</span>: <span class="string">'Q'</span>,</span><br><span class="line">            <span class="string">'.-.'</span>: <span class="string">'R'</span>,</span><br><span class="line">            <span class="string">'...'</span>: <span class="string">'S'</span>,</span><br><span class="line">            <span class="string">'-'</span>: <span class="string">'T'</span>,</span><br><span class="line">            <span class="string">'..-'</span>: <span class="string">'U'</span>,</span><br><span class="line">            <span class="string">'...-'</span>: <span class="string">'V'</span>,</span><br><span class="line">            <span class="string">'.--'</span>: <span class="string">'W'</span>,</span><br><span class="line">            <span class="string">'-..-'</span>: <span class="string">'X'</span>,</span><br><span class="line">            <span class="string">'-.--'</span>: <span class="string">'Y'</span>,</span><br><span class="line">            <span class="string">'--..'</span>: <span class="string">'Z'</span>,</span><br><span class="line">            <span class="string">'.----'</span>: <span class="string">'1'</span>,</span><br><span class="line">            <span class="string">'..---'</span>: <span class="string">'2'</span>,</span><br><span class="line">            <span class="string">'...--'</span>: <span class="string">'3'</span>,</span><br><span class="line">            <span class="string">'....-'</span>: <span class="string">'4'</span>,</span><br><span class="line">            <span class="string">'.....'</span>: <span class="string">'5'</span>,</span><br><span class="line">            <span class="string">'-....'</span>: <span class="string">'6'</span>,</span><br><span class="line">            <span class="string">'--...'</span>: <span class="string">'7'</span>,</span><br><span class="line">            <span class="string">'---..'</span>: <span class="string">'8'</span>,</span><br><span class="line">            <span class="string">'----.'</span>: <span class="string">'9'</span>,</span><br><span class="line">            <span class="string">'-----'</span>: <span class="string">'0'</span>,</span><br><span class="line">            <span class="string">'..--..'</span>: <span class="string">'?'</span>,</span><br><span class="line">            <span class="string">'-..-.'</span>: <span class="string">'/'</span>,</span><br><span class="line">            <span class="string">'-.--.-'</span>: <span class="string">'()'</span>,</span><br><span class="line">            <span class="string">'-....-'</span>: <span class="string">'-'</span>,</span><br><span class="line">            <span class="string">'.-.-.-'</span>: <span class="string">'.'</span></span><br><span class="line">            &#125;;</span><br><span class="line">    <span class="keyword">for</span> item <span class="keyword">in</span> data:</span><br><span class="line">        flag+=dict[item]</span><br><span class="line">    <span class="keyword">return</span> flag</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">(lstr)</span>:</span></span><br><span class="line">    print(lstr)</span><br><span class="line">    result = morse(lstr)</span><br><span class="line">    print(result)</span><br><span class="line">    <span class="keyword">return</span> result</span><br><span class="line"></span><br><span class="line"><span class="comment">#  example</span></span><br><span class="line"><span class="comment"># print('helloworld')</span></span><br><span class="line"><span class="comment"># abc='-.- .. --.- .-.. .-- - ..-. -.-. --.- --. -. ... --- ---'</span></span><br><span class="line"><span class="comment"># main(abc)</span></span><br><span class="line"><span class="comment"># result为KIQLWTFCQGNSOO</span></span><br></pre></td></tr></table></figure>
+<h4 id="替换密码"><a href="#替换密码" class="headerlink" title="替换密码"></a>替换密码</h4><p>qwe替换abc，即键盘的qwert…键盘从上到下，从左到右转换</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/env python</span></span><br><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">&#123;</span></span><br><span class="line"><span class="string">Title:QWECode</span></span><br><span class="line"><span class="string">Author:PinkSmallFan</span></span><br><span class="line"><span class="string">Type:crypto</span></span><br><span class="line"><span class="string">Detail:替换密码</span></span><br><span class="line"><span class="string">&#125;</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">qweDecode</span><span class="params">(lstr)</span>:</span></span><br><span class="line">    qweData = <span class="string">'QWERTYUIOPASDFGHJKLZXCVBNM'</span></span><br><span class="line">    abcData = <span class="string">'ABCDEFGHIJKLMNOPQRSTUVWXYZ'</span></span><br><span class="line">    returnStr = <span class="string">''</span></span><br><span class="line">    <span class="keyword">for</span> data <span class="keyword">in</span> lstr:</span><br><span class="line">        returnStr += abcData[qweData.index(data.upper())]</span><br><span class="line">    <span class="keyword">return</span> returnStr</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">(lstr)</span>:</span></span><br><span class="line">    print(lstr)</span><br><span class="line">    result = qweDecode(lstr)</span><br><span class="line">    print(result)</span><br><span class="line">    <span class="keyword">return</span> result</span><br><span class="line"></span><br><span class="line"><span class="comment"># example</span></span><br><span class="line"><span class="comment"># data='KIQLWTFCQGNSOO'</span></span><br><span class="line"><span class="comment"># main(data)</span></span><br><span class="line"><span class="comment"># RHASBENVAOYLII</span></span><br></pre></td></tr></table></figure>
+<h4 id="栏删密码"><a href="#栏删密码" class="headerlink" title="栏删密码"></a>栏删密码</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/env python</span></span><br><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">&#123;</span></span><br><span class="line"><span class="string">Title:FenceCode</span></span><br><span class="line"><span class="string">Author:PinkSmallFan</span></span><br><span class="line"><span class="string">Type:crypto</span></span><br><span class="line"><span class="string">Detail:栏删密码</span></span><br><span class="line"><span class="string">&#125;</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">fenceDecode</span><span class="params">(lstr)</span>:</span></span><br><span class="line"></span><br><span class="line">    decodeStr = <span class="string">''</span></span><br><span class="line">    returnStr = <span class="string">''</span></span><br><span class="line">    fenceSize = <span class="number">1</span></span><br><span class="line">    encodeSize = len(lstr)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> r <span class="keyword">in</span> range(round(encodeSize/<span class="number">2</span>)):</span><br><span class="line">        fenceSize = r+<span class="number">1</span></span><br><span class="line">        decodeStr = <span class="string">''</span></span><br><span class="line">        <span class="keyword">for</span> f <span class="keyword">in</span> range(fenceSize):</span><br><span class="line">            <span class="keyword">for</span> e <span class="keyword">in</span> range(encodeSize):</span><br><span class="line">                <span class="keyword">if</span>((f + e) % fenceSize == <span class="number">0</span>):</span><br><span class="line">                    decodeStr += lstr[e]</span><br><span class="line"></span><br><span class="line">        returnStr += str(fenceSize) + <span class="string">':'</span> + decodeStr + <span class="string">'\n'</span></span><br><span class="line">    <span class="keyword">return</span> returnStr</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">(lstr)</span>:</span></span><br><span class="line">    print(lstr)</span><br><span class="line">    result = fenceDecode(lstr)</span><br><span class="line">    print(result)</span><br><span class="line">    <span class="keyword">return</span> result</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">myround</span><span class="params">(num)</span>:</span></span><br><span class="line">   <span class="keyword">return</span> int(num)+int(<span class="number">2</span>*num)%<span class="number">2</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># example</span></span><br><span class="line"><span class="comment"># data='RHASBENVAOYLII'</span></span><br><span class="line"><span class="comment"># main(data)</span></span><br><span class="line"><span class="comment"># RHASBENVAOYLII</span></span><br><span class="line"><span class="comment"># 1:RHASBENVAOYLII</span></span><br><span class="line"><span class="comment"># 2:RABNAYIHSEVOLI</span></span><br><span class="line"><span class="comment"># 3:RSNOIAEALHBVYI</span></span><br><span class="line"><span class="comment"># 4:RBAISVLANYHEOI</span></span><br><span class="line"><span class="comment"># 5:REYBOSAIAVIHNL</span></span><br><span class="line"><span class="comment"># 6:RNIELBYSOAAHVI</span></span><br><span class="line"><span class="comment"># 7:RVNIEIBLSYAOHA</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># test</span></span><br><span class="line"><span class="comment"># print(myround(6.9/2))</span></span><br><span class="line"><span class="comment"># print(format(5/2, '.1f'))</span></span><br><span class="line"><span class="comment"># print(round(2.5))</span></span><br></pre></td></tr></table></figure>
+<h4 id="倒序"><a href="#倒序" class="headerlink" title="倒序"></a>倒序</h4><p>可以找到栏删密码中，第二个合适，即ILOVESHIYANBAR，接着大小写都试一下，就完成啦~</p>
+
+        
+
+        
+            <div class="full-width auto-padding tags">
+                
+                    <a href="./tags/密码学/"><i class="fas fa-tag fa-fw"></i>&nbsp;密码学</a>
+                
+                    <a href="./tags/other/"><i class="fas fa-tag fa-fw"></i>&nbsp;other</a>
+                
+                    <a href="./tags/实验吧/"><i class="fas fa-tag fa-fw"></i>&nbsp;实验吧</a>
+                
+            </div>
+        
+    </section>
+</article>
+
+        </div>
+    
+        <div class='post-wrapper'>
+            <article class="post reveal ">
+    <section class="meta">
+        <h2 class="title">
+            <a href="./2018/11/09/2018-11-9-RSA/">
+                
+                    RSA
+                
+            </a>
+        </h2>
+        <time class="time">
+            <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;2018-11-09
+        </time>
+        
+    
+    <div class='cats'>
+        <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+        
+    </div>
+
+
+    </section>
+
+    <section class="article typo">
+        <h2 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h2><h3 id="gmpy2"><a href="#gmpy2" class="headerlink" title="gmpy2"></a>gmpy2</h3><h4 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h4><blockquote>
+<p>import gmpy2<br>divm(…)<br>divm(a, b, m) returns x such that b <em> x == a modulo m. Raises a ZeroDivisionError exception if no such value x exists.<br>invert(…)<br>invert(x, m) returns y such that x </em> y == 1 modulo m, or 0 if no such y exists.</p>
+<p><strong>mpz(…)</strong></p>
+<p>mpz() returns a new <em>mpz</em> object set to 0.</p>
+<p>mpz(n) returns a new <em>mpz</em> object from a numeric value <em>n</em>. If <em>n</em> is not an integer, it will be truncated to an integer.</p>
+<p>mpz(s[, base=0]) returns a new <em>mpz</em> object from a string <em>s</em> made of digits in the given base. If base = 0, thn binary, octal, or hex Python strings are recognized by leading 0b, 0o, or 0x characters. Otherwise the string is assumed to be decimal. Values for base can range between 2 and 62.</p>
+</blockquote>
+<h4 id="常用例子"><a href="#常用例子" class="headerlink" title="常用例子"></a>常用例子</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 已知p、q、e，求d</span></span><br><span class="line"><span class="keyword">import</span> gmpy2</span><br><span class="line">p =gmpy2.mpz(<span class="number">17</span>)</span><br><span class="line">q =gmpy2.mpz(<span class="number">5</span>)</span><br><span class="line">e =gmpy2.mpz(<span class="number">7</span>)</span><br><span class="line">phi_n= (p - <span class="number">1</span>) * (q - <span class="number">1</span>)</span><br><span class="line">d = gmpy2.invert(e, phi_n)</span><br><span class="line">print(<span class="string">"d is:"</span>)</span><br><span class="line"><span class="keyword">print</span> (d)</span><br></pre></td></tr></table></figure>
+<h3 id="pow"><a href="#pow" class="headerlink" title="pow"></a>pow</h3><h4 id="引用-1"><a href="#引用-1" class="headerlink" title="引用"></a>引用</h4><blockquote>
+<p>pow(…)<br>pow(x, y, m) returns n such that x ^ y == 1 modulo m. Raises a ZeroDivisionError exception if no such value n exists.</p>
+</blockquote>
+<h4 id="常用例子-1"><a href="#常用例子-1" class="headerlink" title="常用例子"></a>常用例子</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> gmpy2</span><br><span class="line">p =gmpy2.mpz(<span class="number">9648423029010515676590551740010426534945737639235739800643989352039852507298491399561035009163427050370107570733633350911691280297777160200625281665378483</span>)</span><br><span class="line">q =gmpy2.mpz(<span class="number">11874843837980297032092405848653656852760910154543380907650040190704283358909208578251063047732443992230647903887510065547947313543299303261986053486569407</span>)</span><br><span class="line">e =gmpy2.mpz(<span class="number">65537</span>)</span><br><span class="line">phi_n= (p - <span class="number">1</span>) * (q - <span class="number">1</span>)</span><br><span class="line">n=p*q</span><br><span class="line">d = gmpy2.invert(e, phi_n)</span><br><span class="line">c=gmpy2.mpz(<span class="number">83208298995174604174773590298203639360540024871256126892889661345742403314929861939100492666605647316646576486526217457006376842280869728581726746401583705899941768214138742259689334840735633553053887641847651173776251820293087212885670180367406807406765923638973161375817392737747832762751690104423869019034</span>)</span><br><span class="line">m=pow(c,d,n)</span><br><span class="line">print(<span class="string">"Message is :"</span>)</span><br><span class="line">print(m)</span><br></pre></td></tr></table></figure>
+<p><a href="https://www.freebuf.com/articles/others-articles/166049.html" target="_blank" rel="noopener">引用地址</a></p>
+
+        
+
+        
+            <div class="full-width auto-padding tags">
+                
+                    <a href="./tags/密码学/"><i class="fas fa-tag fa-fw"></i>&nbsp;密码学</a>
+                
+            </div>
+        
+    </section>
+</article>
+
+        </div>
+    
+        <div class='post-wrapper'>
+            <article class="post reveal ">
+    <section class="meta">
+        <h2 class="title">
+            <a href="./2018/11/07/2018-11-7-Base64编码/">
+                
+                    Base64编码
+                
+            </a>
+        </h2>
+        <time class="time">
+            <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;2018-11-07
+        </time>
+        
+    
+    <div class='cats'>
+        <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+        
+    </div>
+
+
+    </section>
+
+    <section class="article typo">
+        <h2 id="伪代码流程"><a href="#伪代码流程" class="headerlink" title="伪代码流程"></a>伪代码流程</h2><h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Base64编解码器</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Base64Encoder</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">byte</span>[] encodingTable =</span><br><span class="line">	&#123;</span><br><span class="line">		(<span class="keyword">byte</span>) <span class="string">'A'</span>, (<span class="keyword">byte</span>) <span class="string">'B'</span>,</span><br><span class="line">		(<span class="keyword">byte</span>) <span class="string">'C'</span>, (<span class="keyword">byte</span>) <span class="string">'D'</span>, (<span class="keyword">byte</span>) <span class="string">'E'</span>, (<span class="keyword">byte</span>) <span class="string">'F'</span>, (<span class="keyword">byte</span>) <span class="string">'G'</span>,</span><br><span class="line">		(<span class="keyword">byte</span>) <span class="string">'H'</span>, (<span class="keyword">byte</span>) <span class="string">'I'</span>, (<span class="keyword">byte</span>) <span class="string">'J'</span>, (<span class="keyword">byte</span>) <span class="string">'K'</span>, (<span class="keyword">byte</span>) <span class="string">'L'</span>,</span><br><span class="line">		(<span class="keyword">byte</span>) <span class="string">'M'</span>, (<span class="keyword">byte</span>) <span class="string">'N'</span>, (<span class="keyword">byte</span>) <span class="string">'O'</span>, (<span class="keyword">byte</span>) <span class="string">'P'</span>, (<span class="keyword">byte</span>) <span class="string">'Q'</span>,</span><br><span class="line">		(<span class="keyword">byte</span>) <span class="string">'R'</span>, (<span class="keyword">byte</span>) <span class="string">'S'</span>, (<span class="keyword">byte</span>) <span class="string">'T'</span>, (<span class="keyword">byte</span>) <span class="string">'U'</span>, (<span class="keyword">byte</span>) <span class="string">'V'</span>,</span><br><span class="line">		(<span class="keyword">byte</span>) <span class="string">'W'</span>, (<span class="keyword">byte</span>) <span class="string">'X'</span>, (<span class="keyword">byte</span>) <span class="string">'Y'</span>, (<span class="keyword">byte</span>) <span class="string">'Z'</span>, (<span class="keyword">byte</span>) <span class="string">'a'</span>,</span><br><span class="line">		(<span class="keyword">byte</span>) <span class="string">'b'</span>, (<span class="keyword">byte</span>) <span class="string">'c'</span>, (<span class="keyword">byte</span>) <span class="string">'d'</span>, (<span class="keyword">byte</span>) <span class="string">'e'</span>, (<span class="keyword">byte</span>) <span class="string">'f'</span>,</span><br><span class="line">		(<span class="keyword">byte</span>) <span class="string">'g'</span>, (<span class="keyword">byte</span>) <span class="string">'h'</span>, (<span class="keyword">byte</span>) <span class="string">'i'</span>, (<span class="keyword">byte</span>) <span class="string">'j'</span>, (<span class="keyword">byte</span>) <span class="string">'k'</span>,</span><br><span class="line">		(<span class="keyword">byte</span>) <span class="string">'l'</span>, (<span class="keyword">byte</span>) <span class="string">'m'</span>, (<span class="keyword">byte</span>) <span class="string">'n'</span>, (<span class="keyword">byte</span>) <span class="string">'o'</span>, (<span class="keyword">byte</span>) <span class="string">'p'</span>,</span><br><span class="line">		(<span class="keyword">byte</span>) <span class="string">'q'</span>, (<span class="keyword">byte</span>) <span class="string">'r'</span>, (<span class="keyword">byte</span>) <span class="string">'s'</span>, (<span class="keyword">byte</span>) <span class="string">'t'</span>, (<span class="keyword">byte</span>) <span class="string">'u'</span>,</span><br><span class="line">		(<span class="keyword">byte</span>) <span class="string">'v'</span>, (<span class="keyword">byte</span>) <span class="string">'w'</span>, (<span class="keyword">byte</span>) <span class="string">'x'</span>, (<span class="keyword">byte</span>) <span class="string">'y'</span>, (<span class="keyword">byte</span>) <span class="string">'z'</span>,</span><br><span class="line">		(<span class="keyword">byte</span>) <span class="string">'0'</span>, (<span class="keyword">byte</span>) <span class="string">'1'</span>, (<span class="keyword">byte</span>) <span class="string">'2'</span>, (<span class="keyword">byte</span>) <span class="string">'3'</span>, (<span class="keyword">byte</span>) <span class="string">'4'</span>,</span><br><span class="line">		(<span class="keyword">byte</span>) <span class="string">'5'</span>, (<span class="keyword">byte</span>) <span class="string">'6'</span>, (<span class="keyword">byte</span>) <span class="string">'7'</span>, (<span class="keyword">byte</span>) <span class="string">'8'</span>, (<span class="keyword">byte</span>) <span class="string">'9'</span>,</span><br><span class="line">		(<span class="keyword">byte</span>) <span class="string">'+'</span>, (<span class="keyword">byte</span>) <span class="string">'/'</span></span><br><span class="line">	&#125;;</span><br><span class="line">	<span class="comment">/*</span></span><br><span class="line"><span class="comment">	 * set up the decoding table.</span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">byte</span>[] decodingTable;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">static</span> &#123;</span><br><span class="line">		decodingTable = <span class="keyword">new</span> <span class="keyword">byte</span>[<span class="number">128</span>];</span><br><span class="line"></span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="string">'A'</span>; i &lt;= <span class="string">'Z'</span>; i++) &#123;</span><br><span class="line">			decodingTable[i] = (<span class="keyword">byte</span>) (i - <span class="string">'A'</span>);</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="string">'a'</span>; i &lt;= <span class="string">'z'</span>; i++) &#123;</span><br><span class="line">			decodingTable[i] = (<span class="keyword">byte</span>) (i - <span class="string">'a'</span> + <span class="number">26</span>);</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="string">'0'</span>; i &lt;= <span class="string">'9'</span>; i++) &#123;</span><br><span class="line">			decodingTable[i] = (<span class="keyword">byte</span>) (i - <span class="string">'0'</span> + <span class="number">52</span>);</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		decodingTable[<span class="string">'+'</span>] = <span class="number">62</span>;</span><br><span class="line">		decodingTable[<span class="string">'/'</span>] = <span class="number">63</span>;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">/**</span></span><br><span class="line"><span class="comment">	 * BASE64编码</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@param</span> date : 二进制数组</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@return</span> 包含BASE64编码后的字符串</span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> String <span class="title">encode</span><span class="params">(<span class="keyword">byte</span>[] data)</span></span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		<span class="keyword">byte</span>[] bytes;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">int</span> modulus = data.length % <span class="number">3</span>;</span><br><span class="line">		<span class="keyword">if</span> (modulus == <span class="number">0</span>) &#123;</span><br><span class="line">			bytes = <span class="keyword">new</span> <span class="keyword">byte</span>[<span class="number">4</span> * data.length / <span class="number">3</span>];</span><br><span class="line">		&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">			bytes = <span class="keyword">new</span> <span class="keyword">byte</span>[<span class="number">4</span> * ((data.length / <span class="number">3</span>) + <span class="number">1</span>)];</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">int</span> dataLength = (data.length - modulus);</span><br><span class="line">		<span class="keyword">int</span> a1, a2, a3;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>, j = <span class="number">0</span>; i &lt; dataLength; i += <span class="number">3</span>, j += <span class="number">4</span>) &#123;</span><br><span class="line">			a1 = data[i] &amp; <span class="number">0xff</span>;</span><br><span class="line">			a2 = data[i + <span class="number">1</span>] &amp; <span class="number">0xff</span>;</span><br><span class="line">			a3 = data[i + <span class="number">2</span>] &amp; <span class="number">0xff</span>;</span><br><span class="line"></span><br><span class="line">			bytes[j] = encodingTable[(a1 &gt;&gt;&gt; <span class="number">2</span>) &amp; <span class="number">0x3f</span>];</span><br><span class="line">			bytes[j + <span class="number">1</span>] = encodingTable[((a1 &lt;&lt; <span class="number">4</span>) | (a2 &gt;&gt;&gt; <span class="number">4</span>)) &amp; <span class="number">0x3f</span>];</span><br><span class="line">			bytes[j + <span class="number">2</span>] = encodingTable[((a2 &lt;&lt; <span class="number">2</span>) | (a3 &gt;&gt;&gt; <span class="number">6</span>)) &amp; <span class="number">0x3f</span>];</span><br><span class="line">			bytes[j + <span class="number">3</span>] = encodingTable[a3 &amp; <span class="number">0x3f</span>];</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="comment">/*</span></span><br><span class="line"><span class="comment">		 * process the tail end.</span></span><br><span class="line"><span class="comment">		 */</span></span><br><span class="line">		<span class="keyword">int</span> b1, b2, b3;</span><br><span class="line">		<span class="keyword">int</span> d1, d2;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">switch</span> (modulus) &#123;</span><br><span class="line">		<span class="keyword">case</span> <span class="number">0</span>: <span class="comment">/* nothing left to do */</span></span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		<span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line">			d1 = data[data.length - <span class="number">1</span>] &amp; <span class="number">0xff</span>;</span><br><span class="line">			b1 = (d1 &gt;&gt;&gt; <span class="number">2</span>) &amp; <span class="number">0x3f</span>;</span><br><span class="line">			b2 = (d1 &lt;&lt; <span class="number">4</span>) &amp; <span class="number">0x3f</span>;</span><br><span class="line"></span><br><span class="line">			bytes[bytes.length - <span class="number">4</span>] = encodingTable[b1];</span><br><span class="line">			bytes[bytes.length - <span class="number">3</span>] = encodingTable[b2];</span><br><span class="line">			bytes[bytes.length - <span class="number">2</span>] = (<span class="keyword">byte</span>) <span class="string">'='</span>;</span><br><span class="line">			bytes[bytes.length - <span class="number">1</span>] = (<span class="keyword">byte</span>) <span class="string">'='</span>;</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		<span class="keyword">case</span> <span class="number">2</span>:</span><br><span class="line">			d1 = data[data.length - <span class="number">2</span>] &amp; <span class="number">0xff</span>;</span><br><span class="line">			d2 = data[data.length - <span class="number">1</span>] &amp; <span class="number">0xff</span>;</span><br><span class="line"></span><br><span class="line">			b1 = (d1 &gt;&gt;&gt; <span class="number">2</span>) &amp; <span class="number">0x3f</span>;</span><br><span class="line">			b2 = ((d1 &lt;&lt; <span class="number">4</span>) | (d2 &gt;&gt;&gt; <span class="number">4</span>)) &amp; <span class="number">0x3f</span>;</span><br><span class="line">			b3 = (d2 &lt;&lt; <span class="number">2</span>) &amp; <span class="number">0x3f</span>;</span><br><span class="line"></span><br><span class="line">			bytes[bytes.length - <span class="number">4</span>] = encodingTable[b1];</span><br><span class="line">			bytes[bytes.length - <span class="number">3</span>] = encodingTable[b2];</span><br><span class="line">			bytes[bytes.length - <span class="number">2</span>] = encodingTable[b3];</span><br><span class="line">			bytes[bytes.length - <span class="number">1</span>] = (<span class="keyword">byte</span>) <span class="string">'='</span>;</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">return</span> <span class="keyword">new</span> String(bytes);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">/**</span></span><br><span class="line"><span class="comment">	 * 判断字符串是否base64字符串</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@param</span> str : 字符串</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@return</span> boolean</span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">boolean</span> <span class="title">isbase64str</span><span class="params">(String str)</span></span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;str.length();i++)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">char</span> t= str.charAt(i);</span><br><span class="line">			<span class="keyword">if</span>(t&gt;=<span class="string">'A'</span> &amp;&amp; t&lt;=<span class="string">'Z'</span>)<span class="keyword">continue</span>;</span><br><span class="line">			<span class="keyword">if</span>(t&gt;=<span class="string">'a'</span> &amp;&amp; t&lt;=<span class="string">'z'</span>)<span class="keyword">continue</span>;</span><br><span class="line">			<span class="keyword">if</span>(t&gt;=<span class="string">'0'</span> &amp;&amp; t&lt;=<span class="string">'9'</span>)<span class="keyword">continue</span>;</span><br><span class="line">			<span class="keyword">switch</span>(t)&#123;</span><br><span class="line">			<span class="keyword">case</span> <span class="string">'+'</span>:</span><br><span class="line">			<span class="keyword">case</span> <span class="string">'/'</span>:</span><br><span class="line">			<span class="keyword">case</span> <span class="string">'='</span>:</span><br><span class="line">			<span class="keyword">case</span> <span class="string">' '</span>:</span><br><span class="line">			<span class="keyword">case</span> <span class="string">'\t'</span>:</span><br><span class="line">			<span class="keyword">case</span> <span class="string">'\n'</span>:</span><br><span class="line">			<span class="keyword">case</span> <span class="string">'\f'</span>:</span><br><span class="line">			<span class="keyword">case</span> <span class="string">'\r'</span>:</span><br><span class="line">				<span class="keyword">continue</span>;</span><br><span class="line">			<span class="keyword">default</span>:</span><br><span class="line">				<span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">/**</span></span><br><span class="line"><span class="comment">	 * BASE64解码</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@param</span> base64 : base64字符串</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@return</span> 解码后的原始二进制数据</span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">byte</span>[] decode(String base64)</span><br><span class="line">	&#123;</span><br><span class="line">		base64= base64.replaceAll(<span class="string">"\\s"</span>,<span class="string">""</span>);	<span class="comment">//去除所有空格 "[ \t\n\x0B\f\r]"</span></span><br><span class="line">		<span class="keyword">byte</span>[] data= base64.getBytes();</span><br><span class="line">		<span class="keyword">byte</span>[] bytes;</span><br><span class="line">		<span class="keyword">byte</span> b1, b2, b3, b4;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">if</span>(data[data.length - <span class="number">2</span>] == <span class="string">'='</span>) &#123;</span><br><span class="line">			bytes = <span class="keyword">new</span> <span class="keyword">byte</span>[(((data.length / <span class="number">4</span>) - <span class="number">1</span>) * <span class="number">3</span>) + <span class="number">1</span>];</span><br><span class="line">		&#125;<span class="keyword">else</span> <span class="keyword">if</span> (data[data.length - <span class="number">1</span>] == <span class="string">'='</span>) &#123;</span><br><span class="line">			bytes = <span class="keyword">new</span> <span class="keyword">byte</span>[(((data.length / <span class="number">4</span>) - <span class="number">1</span>) * <span class="number">3</span>) + <span class="number">2</span>];</span><br><span class="line">		&#125;<span class="keyword">else</span> &#123;</span><br><span class="line">			bytes = <span class="keyword">new</span> <span class="keyword">byte</span>[((data.length / <span class="number">4</span>) * <span class="number">3</span>)];</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>, j = <span class="number">0</span>; i &lt; data.length - <span class="number">4</span>; i += <span class="number">4</span>, j += <span class="number">3</span>)</span><br><span class="line">		&#123;</span><br><span class="line">			b1 = decodingTable[data[i]];</span><br><span class="line">			b2 = decodingTable[data[i + <span class="number">1</span>]];</span><br><span class="line">			b3 = decodingTable[data[i + <span class="number">2</span>]];</span><br><span class="line">			b4 = decodingTable[data[i + <span class="number">3</span>]];</span><br><span class="line"></span><br><span class="line">			bytes[j] = (<span class="keyword">byte</span>) ((b1 &lt;&lt; <span class="number">2</span>) | (b2 &gt;&gt; <span class="number">4</span>));</span><br><span class="line">			bytes[j + <span class="number">1</span>] = (<span class="keyword">byte</span>) ((b2 &lt;&lt; <span class="number">4</span>) | (b3 &gt;&gt; <span class="number">2</span>));</span><br><span class="line">			bytes[j + <span class="number">2</span>] = (<span class="keyword">byte</span>) ((b3 &lt;&lt; <span class="number">6</span>) | b4);</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">if</span> (data[data.length - <span class="number">2</span>] == <span class="string">'='</span>) &#123;</span><br><span class="line">			b1 = decodingTable[data[data.length - <span class="number">4</span>]];</span><br><span class="line">			b2 = decodingTable[data[data.length - <span class="number">3</span>]];</span><br><span class="line"></span><br><span class="line">			bytes[bytes.length - <span class="number">1</span>] = (<span class="keyword">byte</span>) ((b1 &lt;&lt; <span class="number">2</span>) | (b2 &gt;&gt; <span class="number">4</span>));</span><br><span class="line">		&#125; <span class="keyword">else</span> <span class="keyword">if</span> (data[data.length - <span class="number">1</span>] == <span class="string">'='</span>) &#123;</span><br><span class="line">			b1 = decodingTable[data[data.length - <span class="number">4</span>]];</span><br><span class="line">			b2 = decodingTable[data[data.length - <span class="number">3</span>]];</span><br><span class="line">			b3 = decodingTable[data[data.length - <span class="number">2</span>]];</span><br><span class="line"></span><br><span class="line">			bytes[bytes.length - <span class="number">2</span>] = (<span class="keyword">byte</span>) ((b1 &lt;&lt; <span class="number">2</span>) | (b2 &gt;&gt; <span class="number">4</span>));</span><br><span class="line">			bytes[bytes.length - <span class="number">1</span>] = (<span class="keyword">byte</span>) ((b2 &lt;&lt; <span class="number">4</span>) | (b3 &gt;&gt; <span class="number">2</span>));</span><br><span class="line">		&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">			b1 = decodingTable[data[data.length - <span class="number">4</span>]];</span><br><span class="line">			b2 = decodingTable[data[data.length - <span class="number">3</span>]];</span><br><span class="line">			b3 = decodingTable[data[data.length - <span class="number">2</span>]];</span><br><span class="line">			b4 = decodingTable[data[data.length - <span class="number">1</span>]];</span><br><span class="line"></span><br><span class="line">			bytes[bytes.length - <span class="number">3</span>] = (<span class="keyword">byte</span>) ((b1 &lt;&lt; <span class="number">2</span>) | (b2 &gt;&gt; <span class="number">4</span>));</span><br><span class="line">			bytes[bytes.length - <span class="number">2</span>] = (<span class="keyword">byte</span>) ((b2 &lt;&lt; <span class="number">4</span>) | (b3 &gt;&gt; <span class="number">2</span>));</span><br><span class="line">			bytes[bytes.length - <span class="number">1</span>] = (<span class="keyword">byte</span>) ((b3 &lt;&lt; <span class="number">6</span>) | b4);</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">return</span> bytes;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+        
+
+        
+            <div class="full-width auto-padding tags">
+                
+                    <a href="./tags/密码学/"><i class="fas fa-tag fa-fw"></i>&nbsp;密码学</a>
+                
+            </div>
+        
+    </section>
+</article>
+
+        </div>
+    
+        <div class='post-wrapper'>
+            <article class="post reveal ">
+    <section class="meta">
+        <h2 class="title">
+            <a href="./2018/11/04/2018-11-4-实验吧(困在栅栏里的凯撒)/">
+                
+                    实验吧（困在栅栏里的凯撒）
+                
+            </a>
+        </h2>
+        <time class="time">
+            <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;2018-11-04
+        </time>
+        
+    
+    <div class='cats'>
+        <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+        
+    </div>
+
+
+    </section>
+
+    <section class="article typo">
+        <h2 id="困在栅栏里的凯撒"><a href="#困在栅栏里的凯撒" class="headerlink" title="困在栅栏里的凯撒"></a>困在栅栏里的凯撒</h2><h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><blockquote>
+<p>小白发现了一段很6的字符：NlEyQd{seft}</p>
+</blockquote>
+<h3 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h3><p>​    顾名思义，先栅栏，后凯撒</p>
+<ol>
+<li><p>栅栏（FenceCode）</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1：NEQ&#123;etlydsf&#125;</span><br><span class="line">2：Ny&#123;flQstEde&#125;</span><br><span class="line">3：NQeldfE&#123;tys&#125;</span><br><span class="line">4：N&#123;lsEeyfQtd&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>凯撒（CaeserCode）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br></pre></td><td class="code"><pre><span class="line">1：OFR&#123;fumzetg&#125;</span><br><span class="line">2：Oz&#123;gmRtuFef&#125;</span><br><span class="line">3：ORfmegF&#123;uzt&#125;</span><br><span class="line">4：O&#123;mtFfzgRue&#125;</span><br><span class="line"></span><br><span class="line">1：PGS&#123;gvnafuh&#125;</span><br><span class="line">2：Pa&#123;hnSuvGfg&#125;</span><br><span class="line">3：PSgnfhG&#123;vau&#125;</span><br><span class="line">4：P&#123;nuGgahSvf&#125;</span><br><span class="line"></span><br><span class="line">1：QHT&#123;hwobgvi&#125;</span><br><span class="line">2：Qb&#123;ioTvwHgh&#125;</span><br><span class="line">3：QThogiH&#123;wbv&#125;</span><br><span class="line">4：Q&#123;ovHhbiTwg&#125;</span><br><span class="line"></span><br><span class="line">1：RIU&#123;ixpchwj&#125;</span><br><span class="line">2：Rc&#123;jpUwxIhi&#125;</span><br><span class="line">3：RUiphjI&#123;xcw&#125;</span><br><span class="line">4：R&#123;pwIicjUxh&#125;</span><br><span class="line"></span><br><span class="line">1：SJV&#123;jyqdixk&#125;</span><br><span class="line">2：Sd&#123;kqVxyJij&#125;</span><br><span class="line">3：SVjqikJ&#123;ydx&#125;</span><br><span class="line">4：S&#123;qxJjdkVyi&#125;</span><br><span class="line"></span><br><span class="line">1：TKW&#123;kzrejyl&#125;</span><br><span class="line">2：Te&#123;lrWyzKjk&#125;</span><br><span class="line">3：TWkrjlK&#123;zey&#125;</span><br><span class="line">4：T&#123;ryKkelWzj&#125;</span><br><span class="line"></span><br><span class="line">1：ULX&#123;lasfkzm&#125;</span><br><span class="line">2：Uf&#123;msXzaLkl&#125;</span><br><span class="line">3：UXlskmL&#123;afz&#125;</span><br><span class="line">4：U&#123;szLlfmXak&#125;</span><br><span class="line"></span><br><span class="line">1：VMY&#123;mbtglan&#125;</span><br><span class="line">2：Vg&#123;ntYabMlm&#125;</span><br><span class="line">3：VYmtlnM&#123;bga&#125;</span><br><span class="line">4：V&#123;taMmgnYbl&#125;</span><br><span class="line"></span><br><span class="line">1：WNZ&#123;ncuhmbo&#125;</span><br><span class="line">2：Wh&#123;ouZbcNmn&#125;</span><br><span class="line">3：WZnumoN&#123;chb&#125;</span><br><span class="line">4：W&#123;ubNnhoZcm&#125;</span><br><span class="line"></span><br><span class="line">1：XOA&#123;odvincp&#125;</span><br><span class="line">2：Xi&#123;pvAcdOno&#125;</span><br><span class="line">3：XAovnpO&#123;dic&#125;</span><br><span class="line">4：X&#123;vcOoipAdn&#125;</span><br><span class="line"></span><br><span class="line">1：YPB&#123;pewjodq&#125;</span><br><span class="line">2：Yj&#123;qwBdePop&#125;</span><br><span class="line">3：YBpwoqP&#123;ejd&#125;</span><br><span class="line">4：Y&#123;wdPpjqBeo&#125;</span><br><span class="line"></span><br><span class="line">1：ZQC&#123;qfxkper&#125;</span><br><span class="line">2：Zk&#123;rxCefQpq&#125;</span><br><span class="line">3：ZCqxprQ&#123;fke&#125;</span><br><span class="line">4：Z&#123;xeQqkrCfp&#125;</span><br><span class="line"></span><br><span class="line">1：ARD&#123;rgylqfs&#125;</span><br><span class="line">2：Al&#123;syDfgRqr&#125;</span><br><span class="line">3：ADryqsR&#123;glf&#125;</span><br><span class="line">4：A&#123;yfRrlsDgq&#125;</span><br><span class="line"></span><br><span class="line">1：BSE&#123;shzmrgt&#125;</span><br><span class="line">2：Bm&#123;tzEghSrs&#125;</span><br><span class="line">3：BEszrtS&#123;hmg&#125;</span><br><span class="line">4：B&#123;zgSsmtEhr&#125;</span><br><span class="line"></span><br><span class="line">1：CTF&#123;tianshu&#125;</span><br><span class="line">2：Cn&#123;uaFhiTst&#125;</span><br><span class="line">3：CFtasuT&#123;inh&#125;</span><br><span class="line">4：C&#123;ahTtnuFis&#125;</span><br><span class="line"></span><br><span class="line">1：DUG&#123;ujbotiv&#125;</span><br><span class="line">2：Do&#123;vbGijUtu&#125;</span><br><span class="line">3：DGubtvU&#123;joi&#125;</span><br><span class="line">4：D&#123;biUuovGjt&#125;</span><br><span class="line"></span><br><span class="line">1：EVH&#123;vkcpujw&#125;</span><br><span class="line">2：Ep&#123;wcHjkVuv&#125;</span><br><span class="line">3：EHvcuwV&#123;kpj&#125;</span><br><span class="line">4：E&#123;cjVvpwHku&#125;</span><br><span class="line"></span><br><span class="line">1：FWI&#123;wldqvkx&#125;</span><br><span class="line">2：Fq&#123;xdIklWvw&#125;</span><br><span class="line">3：FIwdvxW&#123;lqk&#125;</span><br><span class="line">4：F&#123;dkWwqxIlv&#125;</span><br><span class="line"></span><br><span class="line">1：GXJ&#123;xmerwly&#125;</span><br><span class="line">2：Gr&#123;yeJlmXwx&#125;</span><br><span class="line">3：GJxewyX&#123;mrl&#125;</span><br><span class="line">4：G&#123;elXxryJmw&#125;</span><br><span class="line"></span><br><span class="line">1：HYK&#123;ynfsxmz&#125;</span><br><span class="line">2：Hs&#123;zfKmnYxy&#125;</span><br><span class="line">3：HKyfxzY&#123;nsm&#125;</span><br><span class="line">4：H&#123;fmYyszKnx&#125;</span><br><span class="line"></span><br><span class="line">1：IZL&#123;zogtyna&#125;</span><br><span class="line">2：It&#123;agLnoZyz&#125;</span><br><span class="line">3：ILzgyaZ&#123;otn&#125;</span><br><span class="line">4：I&#123;gnZztaLoy&#125;</span><br><span class="line"></span><br><span class="line">1：JAM&#123;aphuzob&#125;</span><br><span class="line">2：Ju&#123;bhMopAza&#125;</span><br><span class="line">3：JMahzbA&#123;puo&#125;</span><br><span class="line">4：J&#123;hoAaubMpz&#125;</span><br><span class="line"></span><br><span class="line">1：KBN&#123;bqivapc&#125;</span><br><span class="line">2：Kv&#123;ciNpqBab&#125;</span><br><span class="line">3：KNbiacB&#123;qvp&#125;</span><br><span class="line">4：K&#123;ipBbvcNqa&#125;</span><br><span class="line"></span><br><span class="line">1：LCO&#123;crjwbqd&#125;</span><br><span class="line">2：Lw&#123;djOqrCbc&#125;</span><br><span class="line">3：LOcjbdC&#123;rwq&#125;</span><br><span class="line">4：L&#123;jqCcwdOrb&#125;</span><br><span class="line"></span><br><span class="line">1：MDP&#123;dskxcre&#125;</span><br><span class="line">2：Mx&#123;ekPrsDcd&#125;</span><br><span class="line">3：MPdkceD&#123;sxr&#125;</span><br><span class="line">4：M&#123;krDdxePsc&#125;</span><br><span class="line"></span><br><span class="line">1：NEQ&#123;etlydsf&#125;</span><br><span class="line">2：Ny&#123;flQstEde&#125;</span><br><span class="line">3：NQeldfE&#123;tys&#125;</span><br><span class="line">4：N&#123;lsEeyfQtd&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>就可以看到答案是：<strong>CTF{tianshu}</strong></p>
+</li>
+</ol>
+
+        
+
+        
+            <div class="full-width auto-padding tags">
+                
+                    <a href="./tags/密码学/"><i class="fas fa-tag fa-fw"></i>&nbsp;密码学</a>
+                
+                    <a href="./tags/other/"><i class="fas fa-tag fa-fw"></i>&nbsp;other</a>
+                
+                    <a href="./tags/实验吧/"><i class="fas fa-tag fa-fw"></i>&nbsp;实验吧</a>
+                
+            </div>
+        
+    </section>
+</article>
+
+        </div>
+    
+        <div class='post-wrapper'>
+            <article class="post reveal ">
+    <section class="meta">
+        <h2 class="title">
+            <a href="./2018/10/25/2018-10-25-密钥对的相关操作（keytool、openSSL)/">
+                
+                    密钥对的相关操作（keytool、openSSL)
+                
+            </a>
+        </h2>
+        <time class="time">
+            <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;2018-10-25
+        </time>
+        
+    
+    <div class='cats'>
+        <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+        
+    </div>
+
+
+    </section>
+
+    <section class="article typo">
+        <h2 id="cacerts"><a href="#cacerts" class="headerlink" title="cacerts"></a>cacerts</h2><h3 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h3><p>cacerts：trusted certificate authority (CA) certificates</p>
+<blockquote>
+<p>​    The <code>cacerts</code> file is a collection of trusted certificate authority (CA) certificates. Sun Microsystems™ includes a <code>cacerts</code> file with its SSL support in the Java™ Secure Socket Extension (JSSE) tool kit and JDK 1.4.x. It contains certificate references for well-known Certificate authorities, such as VeriSign™. Its format is the “keystore” format defined by Sun. An administrator can edit the <code>cacerts</code> file with a command line tool (also provided by Sun) called keytool. For more information about keytool, see the Sun Web site.</p>
+<p><strong>Note:</strong> The default password for the cacerts file supplied by Sun is <code>changeit</code>. You must use this password to view the contents or to import a new certificate. For security reasons, change the default password.</p>
+<p>The essential requirement is that the certificate authority that signed the HPE Service Manager server’s certificate must be in the list of certificate authorities named in this file. To use a self-issued server certificate created with OpenSSL or a tool such as Microsoft Certificate Server™, you must import the certificate for this private certificate authority into the <code>cacerts</code> file that the client uses for SSL. If you do not import the certificate, SSL connections fail because the Java SSL implementation does not recognize the certificate authority.</p>
+</blockquote>
+<p>​    简单的来说，cacerts是java用于接受受信任的证书已经证书链，cacerts默认包含有一些众所周知的权威证书，以及证书链。当你需要使用https协议，为你的服务添加ssl的时候，需要将你的证书和证书链导入cacerts（如果已经导入过了，就不需要了）。</p>
+<h2 id="keytool"><a href="#keytool" class="headerlink" title="keytool"></a>keytool</h2><h3 id="查看java自带的cacerts"><a href="#查看java自带的cacerts" class="headerlink" title="查看java自带的cacerts"></a>查看java自带的cacerts</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> Linux</span><br><span class="line">cd $JAVA_HOME/jre/lib/security</span><br><span class="line">keytool -list -storepass changeit -keystore "./cacerts"		# 查询所有的证书</span><br><span class="line">keytool -list -storepass changeit -keystore "./cacerts" |grep server </span><br><span class="line"><span class="meta">#</span> 查询alias带有server的证书</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> Windows</span><br><span class="line">cd %JAVA_HOME%/jre/lib/security</span><br><span class="line">keytool -list -storepass changeit -keystore "./cacerts"		# 查询所有的证书</span><br><span class="line">keytool -list -storepass changeit -keystore "./cacerts" |findstr /i server</span><br><span class="line"><span class="meta">#</span> 查询alias带有server的证书</span><br></pre></td></tr></table></figure>
+<h3 id="产生jks密钥对"><a href="#产生jks密钥对" class="headerlink" title="产生jks密钥对"></a>产生jks密钥对</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> 产生一个签名算法为SHA256withRSA的，密钥长度为2048，的RSA密钥对，即软证书server.jks</span><br><span class="line">keytool -keystore server.jks -genkey -alias xxx_server -keyalg RSA -sigalg SHA256withRSA -keysize 2048</span><br></pre></td></tr></table></figure>
+<h3 id="导出jks的证书"><a href="#导出jks的证书" class="headerlink" title="导出jks的证书"></a>导出jks的证书</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> 证书，即公钥</span><br><span class="line">keytool -export -alias server -keystore server.jks -rfc -file sign.cer</span><br></pre></td></tr></table></figure>
+<h3 id="导入证书到cacerts"><a href="#导入证书到cacerts" class="headerlink" title="导入证书到cacerts"></a>导入证书到cacerts</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd $JAVA_HOME/jre/lib/security</span><br><span class="line"><span class="meta">#</span> 将证书导入cacerts，并别名为server</span><br><span class="line">keytool -import -keystore "./cacerts" -alias server -trustcacerts -storepass changeit -file /var/tmp/certs/Server.cer</span><br></pre></td></tr></table></figure>
+<h3 id="在cacerts上删除证书"><a href="#在cacerts上删除证书" class="headerlink" title="在cacerts上删除证书"></a>在cacerts上删除证书</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd $JAVA_HOME/jre/lib/security</span><br><span class="line"><span class="meta">#</span> 删除命名为server的证书</span><br><span class="line">keytool -delete -alias server -keystore "./cacerts" -storepass changeit</span><br></pre></td></tr></table></figure>
+<h3 id="参数分析"><a href="#参数分析" class="headerlink" title="参数分析"></a>参数分析</h3><blockquote>
+<p>-genkey          在用户主目录中创建一个默认文件”.keystore” 的软证书,产生一个mykey的别名，其中包含用户的公钥、私钥和证书<br>(在没有指定生成位置的情况下,keystore会存在用户系统默认目录，如：对于window xp系统，会生成在系统的C:/Documents and Settings/UserName/文件名为“.keystore”)<br>-alias           产生别名，keytool将通过这个别名进行查找<br>-keystore        指定密钥库的名称(产生的各类信息将不在.keystore文件中)<br>-keyalg          指定密钥的算法 (如 RSA  DSA（如果不指定默认采用DSA），推荐采用RSA)<br>-validity        指定创建的证书有效期多少天<br>-keysize         指定密钥长度<br>-storepass       指定密钥库的密码(获取keystore信息所需的密码)<br>-keypass         指定别名条目的密码(私钥的密码)<br>-dname           指定证书拥有者信息<br>-list                显示密钥库中的证书信息<br>-v                   显示密钥库中的证书详细信息<br>-export          将别名指定的证书导出到文件<br>-file                参数指定导出到文件的文件名<br>-delete          删除密钥库中某条目<br>-printcert       查看导出的证书信息<br>-keypasswd   修改密钥库中指定条目口令<br>-storepasswd 修改keystore口令<br>-import          将已签名数字证书导入密钥库  </p>
+</blockquote>
+<p>证书拥有者信息</p>
+<blockquote>
+<p> 例如：  “CN=名字与姓氏,OU=组织单位名称,O=组织名称,L=城市或区域名称,ST=州或省份名称,C=单位的两字母国家代码”</p>
+</blockquote>
+<p>常用命令：</p>
+<blockquote>
+<p> keytool -export -alias 需要导出的别名 -keystore 指定keystore -file 指定导出的证书路径位置，及证书名称 -storepass 密码</p>
+<p>keytool -printcert -file yushan.crt</p>
+<p>keytool -delete -alias 指定需删除的别  -keystore 指定keystore  -storepass     密码</p>
+<p>keytool -list -v -keystore 指定keystore -storepass 密码</p>
+<p>keytool -import -alias 指定导入条目的别名 -keystore 指定keystore -file 需导入的证书</p>
+<p>keytool -storepasswd -keystore e:/yushan.keystore(需修改口令的keystore) -storepass 123456(原始密码) -new yushan(新密码)</p>
+<p>keytool -keypasswd -alias 需修改的别名 -keypass 旧密码 -new  新密码  -storepass keystore密码  -keystore sage</p>
+</blockquote>
+<blockquote>
+<p>下面是各选项的缺省值。<br>-alias “mykey”<br>-keyalg “DSA”<br>-keysize 1024<br>-validity 90<br>-keystore 用户宿主目录中名为 .keystore 的文件<br>-file 读时为标准输入，写时为标准输出 </p>
+</blockquote>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ol>
+<li>什么是cacerts： <a href="https://docs.microfocus.com/SM/9.50/Hybrid/Content/security/concepts/what_is_a_cacerts_file.htm" target="_blank" rel="noopener">https://docs.microfocus.com/SM/9.50/Hybrid/Content/security/concepts/what_is_a_cacerts_file.htm</a></li>
+</ol>
+
+        
+
+        
+            <div class="full-width auto-padding tags">
+                
+                    <a href="./tags/密码学/"><i class="fas fa-tag fa-fw"></i>&nbsp;密码学</a>
+                
+            </div>
+        
+    </section>
+</article>
+
+        </div>
+    
+        <div class='post-wrapper'>
+            <article class="post reveal ">
+    <section class="meta">
+        <h2 class="title">
+            <a href="./2018/10/24/PKI技术/">
+                
+                    PKI技术
+                
+            </a>
+        </h2>
+        <time class="time">
+            <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;2018-10-24
+        </time>
+        
+    
+    <div class='cats'>
+        <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+        
+    </div>
+
+
+    </section>
+
+    <section class="article typo">
+        
+        
+
+        
+            <div class="full-width auto-padding tags">
+                
+                    <a href="./tags/密码学/"><i class="fas fa-tag fa-fw"></i>&nbsp;密码学</a>
+                
+            </div>
+        
+    </section>
+</article>
+
+        </div>
+    
+</section>
+
+
+
+        </div>
+        <aside class='l_side'>
+            
+
+        </aside>
+        <script>setLoadingBarProgress(60);</script>
+    </div>
+    </div>
+    <footer id="footer" class="clearfix">
+    
+    <br>
+    <div>博客内容遵循 <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="licenses">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></div>
+    <div>本站使用 <a href="https://xaoxuu.com/wiki/material-x/" target="_blank" class="codename">Material X</a> 作为主题，
+		总访问量为 <span id="busuanzi_value_site_pv"><i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span> 次。
+    </div>
+</footer>
+<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
+
+
+    <script>setLoadingBarProgress(80);</script>
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src='//cdn.bootcss.com/node-waves/0.7.5/waves.min.js'></script>
+<script src="//cdn.bootcss.com/scrollReveal.js/3.3.2/scrollreveal.min.js"></script>
+<!-- 访问统计 -->
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+<script src="./js/jquery.fitvids.js"></script>
+
+<script src="./js/search.js"></script>
+<script src="./js/app.js"></script>
+
+
+
+    <script>setLoadingBarProgress(100);</script>
+</body>

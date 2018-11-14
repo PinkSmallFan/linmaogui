@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <title>Tag: 高并发 | WenChongAndJiaoKou</title>
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="shortcut icon" href="./">
+  <link rel="alternate" href="./atom.xml" title="WenChongAndJiaoKou">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link rel="shortcut icon" href="" />
+  <link rel="icon" href="" />
+  
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  
+  <!-- <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link href='//cdn.bootcss.com/node-waves/0.7.5/waves.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="./style.css">
+  <script>
+    function setLoadingBarProgress(num) {
+      document.getElementById('loading-bar').style.width=num+"%";
+    }
+  </script>
+</head>
+
+<body>
+    <div id="loading-bar-wrapper">
+  <div id="loading-bar"></div>
+</div>
+
+
+    <script>setLoadingBarProgress(20)</script>
+    <header class="l_header">
+	<div class='wrapper'>
+		<div class="nav-main container container--flex">
+			<a class="logo flat-box" href='./' >WenChongAndJiaoKou</a>
+				<div class='menu'>
+					<ul class='h-list'>
+            
+					</ul>
+					<div class='underline'></div>
+				</div>
+
+			
+			<ul class='switcher h-list'>
+				
+				<li class='s-menu'><a class="fas fa-bars fa-fw" href='javascript:void(0)'></a></li>
+			</ul>
+		</div>
+
+		<div class='nav-sub container container--flex'>
+			<a class="logo flat-box"></a>
+			<ul class='switcher h-list'>
+				<li class='s-comment'><a class="fas fa-comments fa-fw flat-box" href='javascript:void(0)'></a></li>
+				<li class='s-top'><a class="fas fa-arrow-circle-up fa-fw flat-box" href='javascript:void(0)'></a></li>
+				<li class='s-toc'><a class="fas fa-list fa-fw flat-box" href='javascript:void(0)'></a></li>
+			</ul>
+		</div>
+	</div>
+</header>
+	<aside class="menu-phone">
+		<nav>
+      <ul>
+          
+      </ul>
+		</nav>
+	</aside>
+
+    <script>setLoadingBarProgress(40);</script>
+    <div class="l_body">
+    <div class='container clearfix'>
+        <div class='l_main'>
+            
+    <script>
+        window.subData= { title:'tag : 高并发'}
+    </script>
+
+
+<section class="post-list">
+    
+        <div class='post-wrapper'>
+            <article class="post revealno-title">
+                <section class="meta">
+                    <h2 class="title" style="color:#EF503A">
+                        <span class="fas fa-exclamation-triangle"></span>
+                        还剩最后一步就成功了
+                    </h2>
+                    <p>
+                        请按照下面的指示进行操作：
+                    </p>
+                </section>
+                <iframe frameborder="no" width=100% height=600 src="https://xaoxuu.com/wiki/material-x/#/?id=主题配置"></iframe>
+            </article>
+        </div>
+    
+    
+        <div class='post-wrapper'>
+            <article class="post reveal ">
+    <section class="meta">
+        <h2 class="title">
+            <a href="./2018/10/11/highConcurrencyTest/">
+                
+                    高并发测试
+                
+            </a>
+        </h2>
+        <time class="time">
+            <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;2018-10-11
+        </time>
+        
+    
+    <div class='cats'>
+        <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+        
+    </div>
+
+
+    </section>
+
+    <section class="article typo">
+        <h2 id="高并发"><a href="#高并发" class="headerlink" title="高并发"></a>高并发</h2><h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Test</span></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">testConcurrency</span><span class="params">()</span> <span class="keyword">throws</span> Exception</span>&#123;</span><br><span class="line"></span><br><span class="line">       <span class="keyword">final</span> <span class="keyword">int</span> threadSize = <span class="number">100</span>;</span><br><span class="line">       <span class="keyword">final</span> CountDownLatch countDownLatch = <span class="keyword">new</span> CountDownLatch(<span class="number">1</span>);</span><br><span class="line">       <span class="comment">// 创建一个刚好有100个线程槽的线程池</span></span><br><span class="line">       <span class="keyword">final</span> ExecutorService executorService = Executors.newFixedThreadPool(threadSize);</span><br><span class="line">       <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>;i&lt;threadSize; i++)&#123;</span><br><span class="line">           <span class="keyword">final</span> <span class="keyword">int</span> number = i+<span class="number">1</span>;</span><br><span class="line">           Runnable runnable = <span class="keyword">new</span> Runnable() &#123;</span><br><span class="line">               <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</span><br><span class="line">                   <span class="keyword">try</span> &#123;</span><br><span class="line">                       countDownLatch.await();</span><br><span class="line"></span><br><span class="line">                       <span class="comment">// TODO 需要进行并发测试的函数</span></span><br><span class="line">                       </span><br><span class="line">                   &#125; <span class="keyword">catch</span> (Exception e)&#123;</span><br><span class="line">                       e.printStackTrace();</span><br><span class="line">                   &#125;</span><br><span class="line">               &#125;</span><br><span class="line">           &#125;;</span><br><span class="line">		<span class="comment">// 线程池的申请线程</span></span><br><span class="line">           executorService.submit(runnable);</span><br><span class="line">       &#125;</span><br><span class="line">       System.out.println(<span class="string">"Start!!"</span>);</span><br><span class="line">       <span class="comment">// 开始执行并发测试</span></span><br><span class="line">       countDownLatch.countDown();</span><br><span class="line">       <span class="comment">// 等待之前申请线程的时间</span></span><br><span class="line">       executorService.awaitTermination(<span class="number">1000</span>,TimeUnit.MILLISECONDS);</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+<p>### </p>
+<h2 id="任务"><a href="#任务" class="headerlink" title="任务"></a>任务</h2><ol>
+<li>通过IDEA构建一个spring-boot的maven项目</li>
+<li>连接mysql数据库，能够进行简单的增删改查，搭建为一个模板项目[Spring-boot_mysql]</li>
+<li>进行高并发sql的查询测试</li>
+<li>添加mybatis模块</li>
+<li>nexus私服搭建</li>
+<li>添加redis模块</li>
+<li></li>
+<li>添加zookeeper模块</li>
+<li></li>
+<li>添加dubbo模块</li>
+<li></li>
+<li>添加webSocket模块</li>
+<li>添加netty模块-&gt;与tomcat切入（对比）</li>
+<li>未完待续</li>
+</ol>
+<h2 id="idea"><a href="#idea" class="headerlink" title="idea"></a>idea</h2><ol>
+<li>项目搭建、部署的流程步骤</li>
+<li>技术原理的执行步骤</li>
+<li>业务的流程步骤</li>
+</ol>
+<p>​    </p>
+
+        
+
+        
+            <div class="full-width auto-padding tags">
+                
+                    <a href="./tags/测试/"><i class="fas fa-tag fa-fw"></i>&nbsp;测试</a>
+                
+                    <a href="./tags/高并发/"><i class="fas fa-tag fa-fw"></i>&nbsp;高并发</a>
+                
+                    <a href="./tags/代码/"><i class="fas fa-tag fa-fw"></i>&nbsp;代码</a>
+                
+            </div>
+        
+    </section>
+</article>
+
+        </div>
+    
+</section>
+
+
+
+        </div>
+        <aside class='l_side'>
+            
+
+        </aside>
+        <script>setLoadingBarProgress(60);</script>
+    </div>
+    </div>
+    <footer id="footer" class="clearfix">
+    
+    <br>
+    <div>博客内容遵循 <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="licenses">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></div>
+    <div>本站使用 <a href="https://xaoxuu.com/wiki/material-x/" target="_blank" class="codename">Material X</a> 作为主题，
+		总访问量为 <span id="busuanzi_value_site_pv"><i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span> 次。
+    </div>
+</footer>
+<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
+
+
+    <script>setLoadingBarProgress(80);</script>
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src='//cdn.bootcss.com/node-waves/0.7.5/waves.min.js'></script>
+<script src="//cdn.bootcss.com/scrollReveal.js/3.3.2/scrollreveal.min.js"></script>
+<!-- 访问统计 -->
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+<script src="./js/jquery.fitvids.js"></script>
+
+<script src="./js/search.js"></script>
+<script src="./js/app.js"></script>
+
+
+
+    <script>setLoadingBarProgress(100);</script>
+</body>

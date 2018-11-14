@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <title>WenChongAndJiaoKou</title>
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="shortcut icon" href="./">
+  <link rel="alternate" href="./atom.xml" title="WenChongAndJiaoKou">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link rel="shortcut icon" href="" />
+  <link rel="icon" href="" />
+  
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  
+  <!-- <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link href='//cdn.bootcss.com/node-waves/0.7.5/waves.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="./style.css">
+  <script>
+    function setLoadingBarProgress(num) {
+      document.getElementById('loading-bar').style.width=num+"%";
+    }
+  </script>
+</head>
+
+<body>
+    <div id="loading-bar-wrapper">
+  <div id="loading-bar"></div>
+</div>
+
+
+    <script>setLoadingBarProgress(20)</script>
+    <header class="l_header">
+	<div class='wrapper'>
+		<div class="nav-main container container--flex">
+			<a class="logo flat-box" href='./' >WenChongAndJiaoKou</a>
+				<div class='menu'>
+					<ul class='h-list'>
+            
+					</ul>
+					<div class='underline'></div>
+				</div>
+
+			
+			<ul class='switcher h-list'>
+				
+				<li class='s-menu'><a class="fas fa-bars fa-fw" href='javascript:void(0)'></a></li>
+			</ul>
+		</div>
+
+		<div class='nav-sub container container--flex'>
+			<a class="logo flat-box"></a>
+			<ul class='switcher h-list'>
+				<li class='s-comment'><a class="fas fa-comments fa-fw flat-box" href='javascript:void(0)'></a></li>
+				<li class='s-top'><a class="fas fa-arrow-circle-up fa-fw flat-box" href='javascript:void(0)'></a></li>
+				<li class='s-toc'><a class="fas fa-list fa-fw flat-box" href='javascript:void(0)'></a></li>
+			</ul>
+		</div>
+	</div>
+</header>
+	<aside class="menu-phone">
+		<nav>
+      <ul>
+          
+      </ul>
+		</nav>
+	</aside>
+
+    <script>setLoadingBarProgress(40);</script>
+    <div class="l_body">
+    <div class='container clearfix'>
+        <div class='l_main'>
+            
+
+<section class="post-list">
+    
+        <div class='post-wrapper'>
+            <article class="post revealno-title">
+                <section class="meta">
+                    <h2 class="title" style="color:#EF503A">
+                        <span class="fas fa-exclamation-triangle"></span>
+                        还剩最后一步就成功了
+                    </h2>
+                    <p>
+                        请按照下面的指示进行操作：
+                    </p>
+                </section>
+                <iframe frameborder="no" width=100% height=600 src="https://xaoxuu.com/wiki/material-x/#/?id=主题配置"></iframe>
+            </article>
+        </div>
+    
+    
+        <div class='post-wrapper'>
+            <article class="post reveal ">
+    <section class="meta">
+        <h2 class="title">
+            <a href="./2018/11/02/2018-11-2-Java-WebService服务端与客户端的搭建/">
+                
+                    Java WebService服务端与客户端的搭建
+                
+            </a>
+        </h2>
+        <time class="time">
+            <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;2018-11-02
+        </time>
+        
+    
+    <div class='cats'>
+        <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+        
+    </div>
+
+
+    </section>
+
+    <section class="article typo">
+        <h2 id="服务端"><a href="#服务端" class="headerlink" title="服务端"></a>服务端</h2><h3 id="最简单的WebService服务端"><a href="#最简单的WebService服务端" class="headerlink" title="最简单的WebService服务端"></a>最简单的WebService服务端</h3><h4 id="流程"><a href="#流程" class="headerlink" title="流程"></a>流程</h4><ol>
+<li>搭建一个web工程</li>
+<li>在web工程建立包（这里我命名为xx.xxaa，其他也没关系）</li>
+<li>在web工程建立一个类，并命名（这里我命名为ServiceServer，其他也没关系）</li>
+<li>编写main方法，开启服务</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> javax.jws.WebService;</span><br><span class="line"><span class="keyword">import</span> javax.xml.ws.Endpoint;</span><br><span class="line"></span><br><span class="line"><span class="meta">@WebService</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ServiceServer</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 客户端将会调用的方法（服务端被调用的方法）</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> something</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">serverPrint</span><span class="params">(String something)</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">"Server print: "</span>+something;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        Endpoint.publish(<span class="string">"http://127.0.0.1:9991/Service/ServiceServer"</span>, <span class="keyword">new</span> ServiceServer());</span><br><span class="line">        System.out.print(<span class="string">"service open success! Enjoy it..."</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ol start="4">
+<li>打开网址：<a href="http://127.0.0.1:9991/Service/ServiceServer?wsdl" target="_blank" rel="noopener">http://127.0.0.1:9991/Service/ServiceServer?wsdl</a></li>
+</ol>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--</span></span><br><span class="line"><span class="comment"> Published by JAX-WS RI (http://jax-ws.java.net). RI's version is JAX-WS RI 2.2.9-b130926.1035 svn-revision#5f6196f2b90e9460065a4c2f4e30e065b245e51e. </span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"><span class="comment">&lt;!--</span></span><br><span class="line"><span class="comment"> Generated by JAX-WS RI (http://jax-ws.java.net). RI's version is JAX-WS RI 2.2.9-b130926.1035 svn-revision#5f6196f2b90e9460065a4c2f4e30e065b245e51e. </span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">definitions</span> <span class="attr">xmlns:wsu</span>=<span class="string">"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"</span> <span class="attr">xmlns:wsp</span>=<span class="string">"http://www.w3.org/ns/ws-policy"</span> <span class="attr">xmlns:wsp1_2</span>=<span class="string">"http://schemas.xmlsoap.org/ws/2004/09/policy"</span> <span class="attr">xmlns:wsam</span>=<span class="string">"http://www.w3.org/2007/05/addressing/metadata"</span> <span class="attr">xmlns:soap</span>=<span class="string">"http://schemas.xmlsoap.org/wsdl/soap/"</span> <span class="attr">xmlns:tns</span>=<span class="string">"http://service.netcaaa.netca.net/"</span> <span class="attr">xmlns:xsd</span>=<span class="string">"http://www.w3.org/2001/XMLSchema"</span> <span class="attr">xmlns</span>=<span class="string">"http://schemas.xmlsoap.org/wsdl/"</span> <span class="attr">targetNamespace</span>=<span class="string">"http://service.xxaa.xx/"</span> <span class="attr">name</span>=<span class="string">"ServiceServerService"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">types</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">xsd:schema</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">xsd:import</span> <span class="attr">namespace</span>=<span class="string">"http://service.xxaa.xx/"</span> <span class="attr">schemaLocation</span>=<span class="string">"http://127.0.0.1:9991/Service/ServiceServer?xsd=1"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">xsd:schema</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">types</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">message</span> <span class="attr">name</span>=<span class="string">"serverPrint"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">part</span> <span class="attr">name</span>=<span class="string">"parameters"</span> <span class="attr">element</span>=<span class="string">"tns:serverPrint"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">message</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">message</span> <span class="attr">name</span>=<span class="string">"serverPrintResponse"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">part</span> <span class="attr">name</span>=<span class="string">"parameters"</span> <span class="attr">element</span>=<span class="string">"tns:serverPrintResponse"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">message</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">portType</span> <span class="attr">name</span>=<span class="string">"ServiceServer"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">operation</span> <span class="attr">name</span>=<span class="string">"serverPrint"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">wsam:Action</span>=<span class="string">"http://service.xxaa.xx/ServiceServer/serverPrintRequest"</span> <span class="attr">message</span>=<span class="string">"tns:serverPrint"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">output</span> <span class="attr">wsam:Action</span>=<span class="string">"http://service.xxaa.xx/ServiceServer/serverPrintResponse"</span> <span class="attr">message</span>=<span class="string">"tns:serverPrintResponse"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">operation</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">portType</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">binding</span> <span class="attr">name</span>=<span class="string">"ServiceServerPortBinding"</span> <span class="attr">type</span>=<span class="string">"tns:ServiceServer"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">soap:binding</span> <span class="attr">transport</span>=<span class="string">"http://schemas.xmlsoap.org/soap/http"</span> <span class="attr">style</span>=<span class="string">"document"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">operation</span> <span class="attr">name</span>=<span class="string">"serverPrint"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">soap:operation</span> <span class="attr">soapAction</span>=<span class="string">""</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">soap:body</span> <span class="attr">use</span>=<span class="string">"literal"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">input</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">output</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">soap:body</span> <span class="attr">use</span>=<span class="string">"literal"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">output</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">operation</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">binding</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">service</span> <span class="attr">name</span>=<span class="string">"ServiceServerService"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">port</span> <span class="attr">name</span>=<span class="string">"ServiceServerPort"</span> <span class="attr">binding</span>=<span class="string">"tns:ServiceServerPortBinding"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">soap:address</span> <span class="attr">location</span>=<span class="string">"http://127.0.0.1:9991/Service/ServiceServer"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">port</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">service</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">definitions</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="客户端"><a href="#客户端" class="headerlink" title="客户端"></a>客户端</h2><h3 id="流程-1"><a href="#流程-1" class="headerlink" title="流程"></a>流程</h3><ol>
+<li><p>搭建一个普通的Project工程</p>
+</li>
+<li><p>在Project工程建立一个类，并命名（这里我命名为ServiceClient，其他也没关系）</p>
+</li>
+<li><p>cmd编译Service开启服务，提供的Web服务描述语言，生成对应客户端的代码（解析WSDL、生成代码、编译代码）</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> wsimport -s /project/src -p package.client -keep http://127.0.0.1:9991/Service/ServiceServer?wsdl</span><br><span class="line"></span><br><span class="line">wsimport -s C:/WebServiceProject/src -p xx.xxaa.client -keep http://127.0.0.1:9991/Service/ServiceServer?wsdl</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>编写main方法，连接服务</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> net.netca.netcaaa.test;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> xx.xxaa.client.ServiceServer;</span><br><span class="line"><span class="keyword">import</span> xx.xxaa.client.ServiceServerService;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ServiceClient</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		</span><br><span class="line">        <span class="comment">// 请求服务</span></span><br><span class="line">		ServiceServer server = <span class="keyword">new</span> ServiceServerService().getServiceServerPort();</span><br><span class="line">        <span class="comment">// 调用服务</span></span><br><span class="line">		String printData = server.serverPrint(<span class="string">"2018年11月2日09:51:45"</span>);</span><br><span class="line">		System.out.println(printData);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 打印内容如下：</span></span><br><span class="line"><span class="comment">// Server print: 2018年11月2日09:51:45</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>### </p>
+
+        
+
+        
+            <div class="full-width auto-padding tags">
+                
+                    <a href="./tags/java/"><i class="fas fa-tag fa-fw"></i>&nbsp;java</a>
+                
+            </div>
+        
+    </section>
+</article>
+
+        </div>
+    
+        <div class='post-wrapper'>
+            <article class="post reveal ">
+    <section class="meta">
+        <h2 class="title">
+            <a href="./2018/11/01/R语言下order、rank、sort的使用/">
+                
+                    R语言下order、rank、sort的使用
+                
+            </a>
+        </h2>
+        <time class="time">
+            <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;2018-11-01
+        </time>
+        
+    
+    <div class='cats'>
+        <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+        
+    </div>
+
+
+    </section>
+
+    <section class="article typo">
+        <h2 id="sort、rank、order的定义"><a href="#sort、rank、order的定义" class="headerlink" title="sort、rank、order的定义"></a>sort、rank、order的定义</h2><ol>
+<li>sort：对一个向量x的排序</li>
+<li>rank：对排序的结果，进行原数组1到n的排名</li>
+<li>order：对sort排序后的数组，对应原数组数组的位置</li>
+</ol>
+<h2 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h2><figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">z&lt;-c(<span class="number">9</span>,<span class="number">2</span>,<span class="number">14</span>,<span class="number">6</span>,<span class="number">3</span>,<span class="number">1</span>) <span class="comment"># 一共6个数</span></span><br><span class="line">sort(z)		<span class="comment"># 输出 1,2,3,6,9,14</span></span><br><span class="line">rank(z)		<span class="comment"># 输出 5,2,6,4,3,1   (9,2,14,6,3,1)的排名，9排名第5；14排名第6</span></span><br><span class="line">order(z)	<span class="comment"># 输出 6,2,5,4,1,3   (1,2,3,6,9,14)在(9,2,14,6,3,1)的位置</span></span><br><span class="line"><span class="comment"># order，比如(1,2,3,6,9,14)中的1在(9,2,14,6,3,1)是第6位，(1,2,3,6,9,14)中的14在(9,2,14,6,3,1)是第3位</span></span><br><span class="line">order(z,decreasing = <span class="literal">TRUE</span>) <span class="comment"># 输出3,1,4,5,2,6,为order排序的反排序</span></span><br></pre></td></tr></table></figure>
+
+        
+
+        
+            <div class="full-width auto-padding tags">
+                
+                    <a href="./tags/R/"><i class="fas fa-tag fa-fw"></i>&nbsp;R</a>
+                
+                    <a href="./tags/生信/"><i class="fas fa-tag fa-fw"></i>&nbsp;生信</a>
+                
+            </div>
+        
+    </section>
+</article>
+
+        </div>
+    
+        <div class='post-wrapper'>
+            <article class="post reveal ">
+    <section class="meta">
+        <h2 class="title">
+            <a href="./2018/10/30/JAVA_GC日志分析/">
+                
+                    JAVA_GC日志分析
+                
+            </a>
+        </h2>
+        <time class="time">
+            <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;2018-10-30
+        </time>
+        
+    
+    <div class='cats'>
+        <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+        
+    </div>
+
+
+    </section>
+
+    <section class="article typo">
+        <h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><h3 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h3><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">set <span class="string">"JAVA_OPTS=%JAVA_OPTS% -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -Xloggc:%CATALINA_HOME%/logs/tomcat_gc.log"</span></span><br></pre></td></tr></table></figure>
+<h3 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="日志打印"><a href="#日志打印" class="headerlink" title="日志打印"></a>日志打印</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">Java HotSpot(TM) 64-Bit Server VM (25.92-b14) for windows-amd64 JRE (1.8.0_92-b14), built on Mar 31 2016 21:03:04 by "java_re" with MS VC++ 10.0 (VS2010)</span><br><span class="line">Memory: 4k page, physical 8281844k(2149156k free), swap 16563688k(2821648k free)</span><br><span class="line">CommandLine flags: -XX:InitialHeapSize=132509504 -XX:MaxHeapSize=2120152064 -XX:+PrintGC -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:-UseLargePagesIndividualAllocation -XX:+UseParallelGC </span><br><span class="line">0.752: [GC (Allocation Failure) [PSYoungGen: 33280K-&gt;5088K(38400K)] 33280K-&gt;8036K(125952K), 0.0060004 secs] [Times: user=0.00 sys=0.02, real=0.01 secs] </span><br><span class="line">1.066: [GC (Allocation Failure) [PSYoungGen: 38368K-&gt;5101K(38400K)] 41316K-&gt;14206K(125952K), 0.0067035 secs] [Times: user=0.08 sys=0.05, real=0.01 secs] </span><br><span class="line">1.295: [GC (Allocation Failure) [PSYoungGen: 38381K-&gt;5103K(38400K)] 47486K-&gt;20597K(125952K), 0.0056209 secs] [Times: user=0.00 sys=0.00, real=0.00 secs] </span><br><span class="line">1.568: [GC (Allocation Failure) [PSYoungGen: 38383K-&gt;5101K(71680K)] 53877K-&gt;22063K(159232K), 0.0047853 secs] [Times: user=0.00 sys=0.01, real=0.00 secs] </span><br><span class="line">1.842: [GC (Allocation Failure) [PSYoungGen: 71661K-&gt;5094K(71680K)] 88623K-&gt;26332K(159232K), 0.0054331 secs] [Times: user=0.00 sys=0.00, real=0.01 secs] </span><br><span class="line">2.036: [GC (Allocation Failure) [PSYoungGen: 71654K-&gt;9722K(145920K)] 92892K-&gt;30967K(233472K), 0.0070884 secs] [Times: user=0.05 sys=0.08, real=0.01 secs] </span><br><span class="line">2.536: [GC (Allocation Failure) [PSYoungGen: 142842K-&gt;12793K(145920K)] 164087K-&gt;40684K(233472K), 0.0160709 secs] [Times: user=0.13 sys=0.00, real=0.02 secs] </span><br><span class="line">2.951: [GC (Allocation Failure) [PSYoungGen: 145913K-&gt;17389K(278528K)] 173804K-&gt;52575K(366080K), 0.0191865 secs] [Times: user=0.06 sys=0.00, real=0.02 secs] </span><br><span class="line">3.876: [GC (Allocation Failure) [PSYoungGen: 278509K-&gt;22517K(283648K)] 313695K-&gt;68138K(371200K), 0.0283277 secs] [Times: user=0.06 sys=0.01, real=0.03 secs] </span><br><span class="line">4.712: [GC (Allocation Failure) [PSYoungGen: 283637K-&gt;26941K(444416K)] 329258K-&gt;75433K(531968K), 0.0244180 secs] [Times: user=0.03 sys=0.00, real=0.02 secs] </span><br><span class="line">5.929: [GC (Allocation Failure) [PSYoungGen: 441661K-&gt;32745K(447488K)] 490153K-&gt;97742K(535040K), 0.0445053 secs] [Times: user=0.01 sys=0.02, real=0.04 secs] </span><br><span class="line">6.643: [GC (Allocation Failure) [PSYoungGen: 447465K-&gt;43506K(610816K)] 512462K-&gt;139231K(706560K), 0.1259313 secs] [Times: user=0.11 sys=0.02, real=0.13 secs] </span><br><span class="line">6.769: [Full GC (Ergonomics) [PSYoungGen: 43506K-&gt;5558K(610816K)] [ParOldGen: 95725K-&gt;95741K(160256K)] 139231K-&gt;101300K(771072K), [Metaspace: 15778K-&gt;15778K(1064960K)], 0.1242255 secs] [Times: user=0.88 sys=0.02, real=0.12 secs] </span><br><span class="line">8.180: [GC (Allocation Failure) [PSYoungGen: 572854K-&gt;61409K(628736K)] 668596K-&gt;183826K(788992K), 0.1223716 secs] [Times: user=0.08 sys=0.03, real=0.12 secs] </span><br><span class="line">10.120: [GC (Allocation Failure) [PSYoungGen: 628705K-&gt;49902K(585728K)] 751122K-&gt;174795K(745984K), 0.0286591 secs] [Times: user=0.03 sys=0.02, real=0.03 secs] </span><br><span class="line">11.454: [GC (Metadata GC Threshold) [PSYoungGen: 278885K-&gt;9853K(607232K)] 403778K-&gt;139883K(767488K), 0.0074279 secs] [Times: user=0.08 sys=0.00, real=0.01 secs] </span><br><span class="line">11.461: [Full GC (Metadata GC Threshold) [PSYoungGen: 9853K-&gt;0K(607232K)] [ParOldGen: 130030K-&gt;35015K(113664K)] 139883K-&gt;35015K(720896K), [Metaspace: 26949K-&gt;26949K(1073152K)], 0.0459526 secs] [Times: user=0.16 sys=0.02, real=0.05 secs] </span><br><span class="line">14.681: [GC (Allocation Failure) [PSYoungGen: 524288K-&gt;20133K(600064K)] 559303K-&gt;55157K(713728K), 0.0090754 secs] [Times: user=0.00 sys=0.00, real=0.01 secs] </span><br><span class="line">21.688: [GC (Metadata GC Threshold) [PSYoungGen: 332707K-&gt;7017K(604160K)] 367730K-&gt;59045K(717824K), 0.0103632 secs] [Times: user=0.13 sys=0.00, real=0.01 secs] </span><br><span class="line">21.698: [Full GC (Metadata GC Threshold) [PSYoungGen: 7017K-&gt;0K(604160K)] [ParOldGen: 52028K-&gt;49336K(140288K)] 59045K-&gt;49336K(744448K), [Metaspace: 45055K-&gt;45018K(1089536K)], 0.1324701 secs] [Times: user=0.77 sys=0.00, real=0.13 secs] </span><br><span class="line">27.316: [GC (Allocation Failure) [PSYoungGen: 525312K-&gt;4448K(608256K)] 574648K-&gt;53793K(748544K), 0.0027460 secs] [Times: user=0.01 sys=0.00, real=0.00 secs] </span><br><span class="line">29.158: [GC (Allocation Failure) [PSYoungGen: 537952K-&gt;1568K(610304K)] 587297K-&gt;54126K(750592K), 0.0024272 secs] [Times: user=0.00 sys=0.00, real=0.00 secs] </span><br><span class="line">41.077: [GC (Allocation Failure) [PSYoungGen: 535072K-&gt;752K(609792K)] 587630K-&gt;54484K(750080K), 0.0019681 secs] [Times: user=0.00 sys=0.00, real=0.00 secs] </span><br><span class="line">43.047: [GC (Allocation Failure) [PSYoungGen: 538864K-&gt;752K(611840K)] 592596K-&gt;54492K(752128K), 0.0017160 secs] [Times: user=0.00 sys=0.00, real=0.00 secs] </span><br><span class="line">55.079: [GC (Allocation Failure) [PSYoungGen: 538864K-&gt;752K(610816K)] 592604K-&gt;54500K(751104K), 0.0017559 secs] [Times: user=0.00 sys=0.00, real=0.00 secs] </span><br><span class="line">57.078: [GC (Allocation Failure) [PSYoungGen: 545008K-&gt;704K(613888K)] 598756K-&gt;54452K(754176K), 0.0023127 secs] [Times: user=0.00 sys=0.00, real=0.00 secs]</span><br></pre></td></tr></table></figure>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ol>
+<li><a href="https://www.cnblogs.com/Vince-blogs/p/8484640.html" target="_blank" rel="noopener">https://www.cnblogs.com/Vince-blogs/p/8484640.html</a></li>
+</ol>
+
+        
+
+        
+            <div class="full-width auto-padding tags">
+                
+                    <a href="./tags/Java/"><i class="fas fa-tag fa-fw"></i>&nbsp;Java</a>
+                
+            </div>
+        
+    </section>
+</article>
+
+        </div>
+    
+        <div class='post-wrapper'>
+            <article class="post reveal ">
+    <section class="meta">
+        <h2 class="title">
+            <a href="./2018/10/27/网易入职路线/">
+                
+                    网易入职路线
+                
+            </a>
+        </h2>
+        <time class="time">
+            <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;2018-10-27
+        </time>
+        
+    
+    <div class='cats'>
+        <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+        
+    </div>
+
+
+    </section>
+
+    <section class="article typo">
+        <h2 id="基本知识必知必会"><a href="#基本知识必知必会" class="headerlink" title="基本知识必知必会"></a>基本知识必知必会</h2><ol>
+<li></li>
+</ol>
+<h2 id="DB"><a href="#DB" class="headerlink" title="DB"></a>DB</h2><h2 id="额外素质"><a href="#额外素质" class="headerlink" title="额外素质"></a>额外素质</h2><ol>
+<li></li>
+</ol>
+<h2 id="所有技能汇总"><a href="#所有技能汇总" class="headerlink" title="所有技能汇总"></a>所有技能汇总</h2><ol>
+<li>精通java编程，熟悉java sdk提供的主要能力;</li>
+<li>理解java运行时工作原理，熟悉jvm性能调优，能够充分利用java特性支持框架与程序库的设计开发;</li>
+<li>熟悉多线程编程，熟练使用java并发包下的各项常用基础设施;</li>
+<li>熟悉网络编程，能够熟练使用java nio开发高并发、高吞吐量的服务;</li>
+<li>熟悉常用网络协议，如TCP/IP, HTTP;</li>
+<li>能够熟练使用linux，能够利用常用的工具对程序进行跟踪诊断;</li>
+<li>有分布式系统开发经验，对消息服务、负载均衡、高可用机制等有深入理解，有开放平台开发经验者优先；</li>
+<li>具备良好学习、沟通能力及团队协作精神，对工作积极严谨，勇于承担压力。</li>
+<li>参与公众号、小程序、小游戏等微信相关产品开发； </li>
+<li>参与Web业务系统开发； </li>
+<li>精通Web系统开发；</li>
+<li>精通Java语言，及Spring、MyBatis/Hibernate等后端框架框架；</li>
+<li>熟悉数据库相关技术，熟悉MySQL和Oracle，版本，字段区别，熟悉SQL性能优化</li>
+<li>熟练使用Spring相关技术，例如Spring Boot、Spring Cloud、Spring Security等；</li>
+<li>熟练使用Memcached、MongoDB、RabbitMQ等中间件；</li>
+<li>优秀的沟通协作和逻辑分析能力，能对团队成员进行开发和技术指导。</li>
+<li>熟悉Spring/Netty/Rabbitmq/Hystrix等；</li>
+<li>熟悉Nginx/Tomcat等web服务器；</li>
+<li>redis持久化策略，redis五种数据结构？ZSET怎么实现</li>
+<li>怎么分析生产环境GC情况？（jconsole、jvisualvm、runtime包、dump日志）？说下分析GC日志</li>
+<li>MQ、MQ怎么保证恰好被消费一次？如果多次消费怎么保证幂等？因为上游业务bug或者其他问题不断的收到同一条消息怎么保证消费者的业务不受影响？</li>
+<li>dubbo也就是RPC的完整流程是怎么样的（序列化、传输、动态代理……），dubbo的优点是什么？为什么要用dubbo？没有rpc的时候是怎么做的？all in one 这种模式有什么优点？dubbo的消费者为什么也要注册到zookeeper？只有提供者注册服务不行吗？dubbo为什么用hessian?jdk的序列化有什么问题？xml、json为啥不行？dubbo网络传输是怎么实现的？</li>
+<li>mongdb实现细节</li>
+<li></li>
+</ol>
+
+        
+
+        
+            <div class="full-width auto-padding tags">
+                
+                    <a href="./tags/other/"><i class="fas fa-tag fa-fw"></i>&nbsp;other</a>
+                
+            </div>
+        
+    </section>
+</article>
+
+        </div>
+    
+        <div class='post-wrapper'>
+            <article class="post reveal ">
+    <section class="meta">
+        <h2 class="title">
+            <a href="./2018/10/26/CTF/">
+                
+                    实验吧ctf训练题库
+                
+            </a>
+        </h2>
+        <time class="time">
+            <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;2018-10-26
+        </time>
+        
+    
+    <div class='cats'>
+        <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+        
+    </div>
+
+
+    </section>
+
+    <section class="article typo">
+        <h2 id="WEB"><a href="#WEB" class="headerlink" title="WEB"></a>WEB</h2><h2 id="密码学"><a href="#密码学" class="headerlink" title="密码学"></a>密码学</h2><h3 id="变异凯撒"><a href="#变异凯撒" class="headerlink" title="变异凯撒"></a>变异凯撒</h3><h4 id="题目："><a href="#题目：" class="headerlink" title="题目："></a>题目：</h4><blockquote>
+<p>加密密文：afZ_r9VYfScOeO_UL^RWUc<br>格式：flag{ }</p>
+</blockquote>
+<h4 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h4><p>afZ_转字符串：97 102 90 95</p>
+<p>flag转字符串：102 108 97 103</p>
+<p>规律：5 6 7 8</p>
+<h4 id="解题过程（python3）："><a href="#解题过程（python3）：" class="headerlink" title="解题过程（python3）："></a>解题过程（python3）：</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">encryptData=<span class="string">'afZ_r9VYfScOeO_UL^RWUc'</span></span><br><span class="line">i=<span class="number">5</span></span><br><span class="line">b=<span class="string">''</span></span><br><span class="line">index=<span class="number">0</span></span><br><span class="line"><span class="keyword">for</span> data <span class="keyword">in</span> encryptData:</span><br><span class="line">	b=b[:index]+chr(ord(data)+i)</span><br><span class="line">	i=i+<span class="number">1</span></span><br><span class="line">	index=index+<span class="number">1</span></span><br><span class="line">b</span><br><span class="line"><span class="comment"># chr(data):将ASCII转字符串</span></span><br><span class="line"><span class="comment"># ord(data):将字符串转ASCII</span></span><br></pre></td></tr></table></figure>
+<h4 id="解题结果"><a href="#解题结果" class="headerlink" title="解题结果"></a>解题结果</h4><blockquote>
+<p>‘flag{Caesar_variation}’</p>
+</blockquote>
+
+        
+
+        
+            <div class="full-width auto-padding tags">
+                
+                    <a href="./tags/CTF/"><i class="fas fa-tag fa-fw"></i>&nbsp;CTF</a>
+                
+            </div>
+        
+    </section>
+</article>
+
+        </div>
+    
+        <div class='post-wrapper'>
+            <article class="post reveal ">
+    <section class="meta">
+        <h2 class="title">
+            <a href="./2018/10/25/2018-10-25-密钥对的相关操作（keytool、openSSL)/">
+                
+                    密钥对的相关操作（keytool、openSSL)
+                
+            </a>
+        </h2>
+        <time class="time">
+            <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;2018-10-25
+        </time>
+        
+    
+    <div class='cats'>
+        <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+        
+    </div>
+
+
+    </section>
+
+    <section class="article typo">
+        <h2 id="cacerts"><a href="#cacerts" class="headerlink" title="cacerts"></a>cacerts</h2><h3 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h3><p>cacerts：trusted certificate authority (CA) certificates</p>
+<blockquote>
+<p>​    The <code>cacerts</code> file is a collection of trusted certificate authority (CA) certificates. Sun Microsystems™ includes a <code>cacerts</code> file with its SSL support in the Java™ Secure Socket Extension (JSSE) tool kit and JDK 1.4.x. It contains certificate references for well-known Certificate authorities, such as VeriSign™. Its format is the “keystore” format defined by Sun. An administrator can edit the <code>cacerts</code> file with a command line tool (also provided by Sun) called keytool. For more information about keytool, see the Sun Web site.</p>
+<p><strong>Note:</strong> The default password for the cacerts file supplied by Sun is <code>changeit</code>. You must use this password to view the contents or to import a new certificate. For security reasons, change the default password.</p>
+<p>The essential requirement is that the certificate authority that signed the HPE Service Manager server’s certificate must be in the list of certificate authorities named in this file. To use a self-issued server certificate created with OpenSSL or a tool such as Microsoft Certificate Server™, you must import the certificate for this private certificate authority into the <code>cacerts</code> file that the client uses for SSL. If you do not import the certificate, SSL connections fail because the Java SSL implementation does not recognize the certificate authority.</p>
+</blockquote>
+<p>​    简单的来说，cacerts是java用于接受受信任的证书已经证书链，cacerts默认包含有一些众所周知的权威证书，以及证书链。当你需要使用https协议，为你的服务添加ssl的时候，需要将你的证书和证书链导入cacerts（如果已经导入过了，就不需要了）。</p>
+<h2 id="keytool"><a href="#keytool" class="headerlink" title="keytool"></a>keytool</h2><h3 id="查看java自带的cacerts"><a href="#查看java自带的cacerts" class="headerlink" title="查看java自带的cacerts"></a>查看java自带的cacerts</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> Linux</span><br><span class="line">cd $JAVA_HOME/jre/lib/security</span><br><span class="line">keytool -list -storepass changeit -keystore "./cacerts"		# 查询所有的证书</span><br><span class="line">keytool -list -storepass changeit -keystore "./cacerts" |grep server </span><br><span class="line"><span class="meta">#</span> 查询alias带有server的证书</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> Windows</span><br><span class="line">cd %JAVA_HOME%/jre/lib/security</span><br><span class="line">keytool -list -storepass changeit -keystore "./cacerts"		# 查询所有的证书</span><br><span class="line">keytool -list -storepass changeit -keystore "./cacerts" |findstr /i server</span><br><span class="line"><span class="meta">#</span> 查询alias带有server的证书</span><br></pre></td></tr></table></figure>
+<h3 id="产生jks密钥对"><a href="#产生jks密钥对" class="headerlink" title="产生jks密钥对"></a>产生jks密钥对</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> 产生一个签名算法为SHA256withRSA的，密钥长度为2048，的RSA密钥对，即软证书server.jks</span><br><span class="line">keytool -keystore server.jks -genkey -alias xxx_server -keyalg RSA -sigalg SHA256withRSA -keysize 2048</span><br></pre></td></tr></table></figure>
+<h3 id="导出jks的证书"><a href="#导出jks的证书" class="headerlink" title="导出jks的证书"></a>导出jks的证书</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> 证书，即公钥</span><br><span class="line">keytool -export -alias server -keystore server.jks -rfc -file sign.cer</span><br></pre></td></tr></table></figure>
+<h3 id="导入证书到cacerts"><a href="#导入证书到cacerts" class="headerlink" title="导入证书到cacerts"></a>导入证书到cacerts</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd $JAVA_HOME/jre/lib/security</span><br><span class="line"><span class="meta">#</span> 将证书导入cacerts，并别名为server</span><br><span class="line">keytool -import -keystore "./cacerts" -alias server -trustcacerts -storepass changeit -file /var/tmp/certs/Server.cer</span><br></pre></td></tr></table></figure>
+<h3 id="在cacerts上删除证书"><a href="#在cacerts上删除证书" class="headerlink" title="在cacerts上删除证书"></a>在cacerts上删除证书</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd $JAVA_HOME/jre/lib/security</span><br><span class="line"><span class="meta">#</span> 删除命名为server的证书</span><br><span class="line">keytool -delete -alias server -keystore "./cacerts" -storepass changeit</span><br></pre></td></tr></table></figure>
+<h3 id="参数分析"><a href="#参数分析" class="headerlink" title="参数分析"></a>参数分析</h3><blockquote>
+<p>-genkey          在用户主目录中创建一个默认文件”.keystore” 的软证书,产生一个mykey的别名，其中包含用户的公钥、私钥和证书<br>(在没有指定生成位置的情况下,keystore会存在用户系统默认目录，如：对于window xp系统，会生成在系统的C:/Documents and Settings/UserName/文件名为“.keystore”)<br>-alias           产生别名，keytool将通过这个别名进行查找<br>-keystore        指定密钥库的名称(产生的各类信息将不在.keystore文件中)<br>-keyalg          指定密钥的算法 (如 RSA  DSA（如果不指定默认采用DSA），推荐采用RSA)<br>-validity        指定创建的证书有效期多少天<br>-keysize         指定密钥长度<br>-storepass       指定密钥库的密码(获取keystore信息所需的密码)<br>-keypass         指定别名条目的密码(私钥的密码)<br>-dname           指定证书拥有者信息<br>-list                显示密钥库中的证书信息<br>-v                   显示密钥库中的证书详细信息<br>-export          将别名指定的证书导出到文件<br>-file                参数指定导出到文件的文件名<br>-delete          删除密钥库中某条目<br>-printcert       查看导出的证书信息<br>-keypasswd   修改密钥库中指定条目口令<br>-storepasswd 修改keystore口令<br>-import          将已签名数字证书导入密钥库  </p>
+</blockquote>
+<p>证书拥有者信息</p>
+<blockquote>
+<p> 例如：  “CN=名字与姓氏,OU=组织单位名称,O=组织名称,L=城市或区域名称,ST=州或省份名称,C=单位的两字母国家代码”</p>
+</blockquote>
+<p>常用命令：</p>
+<blockquote>
+<p> keytool -export -alias 需要导出的别名 -keystore 指定keystore -file 指定导出的证书路径位置，及证书名称 -storepass 密码</p>
+<p>keytool -printcert -file yushan.crt</p>
+<p>keytool -delete -alias 指定需删除的别  -keystore 指定keystore  -storepass     密码</p>
+<p>keytool -list -v -keystore 指定keystore -storepass 密码</p>
+<p>keytool -import -alias 指定导入条目的别名 -keystore 指定keystore -file 需导入的证书</p>
+<p>keytool -storepasswd -keystore e:/yushan.keystore(需修改口令的keystore) -storepass 123456(原始密码) -new yushan(新密码)</p>
+<p>keytool -keypasswd -alias 需修改的别名 -keypass 旧密码 -new  新密码  -storepass keystore密码  -keystore sage</p>
+</blockquote>
+<blockquote>
+<p>下面是各选项的缺省值。<br>-alias “mykey”<br>-keyalg “DSA”<br>-keysize 1024<br>-validity 90<br>-keystore 用户宿主目录中名为 .keystore 的文件<br>-file 读时为标准输入，写时为标准输出 </p>
+</blockquote>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ol>
+<li>什么是cacerts： <a href="https://docs.microfocus.com/SM/9.50/Hybrid/Content/security/concepts/what_is_a_cacerts_file.htm" target="_blank" rel="noopener">https://docs.microfocus.com/SM/9.50/Hybrid/Content/security/concepts/what_is_a_cacerts_file.htm</a></li>
+</ol>
+
+        
+
+        
+            <div class="full-width auto-padding tags">
+                
+                    <a href="./tags/密码学/"><i class="fas fa-tag fa-fw"></i>&nbsp;密码学</a>
+                
+            </div>
+        
+    </section>
+</article>
+
+        </div>
+    
+        <div class='post-wrapper'>
+            <article class="post reveal ">
+    <section class="meta">
+        <h2 class="title">
+            <a href="./2018/10/24/PKI技术/">
+                
+                    PKI技术
+                
+            </a>
+        </h2>
+        <time class="time">
+            <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;2018-10-24
+        </time>
+        
+    
+    <div class='cats'>
+        <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+        
+    </div>
+
+
+    </section>
+
+    <section class="article typo">
+        
+        
+
+        
+            <div class="full-width auto-padding tags">
+                
+                    <a href="./tags/密码学/"><i class="fas fa-tag fa-fw"></i>&nbsp;密码学</a>
+                
+            </div>
+        
+    </section>
+</article>
+
+        </div>
+    
+        <div class='post-wrapper'>
+            <article class="post reveal ">
+    <section class="meta">
+        <h2 class="title">
+            <a href="./2018/10/24/json解析/">
+                
+                    json解析
+                
+            </a>
+        </h2>
+        <time class="time">
+            <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;2018-10-24
+        </time>
+        
+    
+    <div class='cats'>
+        <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+        
+    </div>
+
+
+    </section>
+
+    <section class="article typo">
+        <h2 id="JSON结构"><a href="#JSON结构" class="headerlink" title="JSON结构"></a>JSON结构</h2><h3 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h3><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	<span class="attr">"workers"</span>:[</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="attr">"id"</span>:<span class="string">"1"</span>,</span><br><span class="line">		<span class="attr">"name"</span>:<span class="string">"programmer"</span></span><br><span class="line">	&#125;,</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="attr">"id"</span>:<span class="string">"2"</span>,</span><br><span class="line">		<span class="attr">"name"</span>:<span class="string">"productManager"</span></span><br><span class="line">	&#125;,</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="attr">"id"</span>:<span class="string">"3"</span>,</span><br><span class="line">		<span class="attr">"name"</span>:<span class="string">"leader"</span></span><br><span class="line">	&#125;</span><br><span class="line">	]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="bean实例"><a href="#bean实例" class="headerlink" title="bean实例"></a>bean实例</h3><h4 id="一个单位对应一个bean"><a href="#一个单位对应一个bean" class="headerlink" title="一个单位对应一个bean"></a>一个单位对应一个bean</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Worker</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">private</span> <span class="keyword">int</span> id;</span><br><span class="line">	<span class="keyword">private</span> String name;</span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getId</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> id;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setId</span><span class="params">(<span class="keyword">int</span> id)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.id = id;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> String <span class="title">getName</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> name;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setName</span><span class="params">(String name)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.name = name;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="一个集合对应一个bean"><a href="#一个集合对应一个bean" class="headerlink" title="一个集合对应一个bean"></a>一个集合对应一个bean</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Workers</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">private</span> List&lt;Worker&gt; workers;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> List&lt;Worker&gt; <span class="title">getWorkers</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> workers;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setWorkers</span><span class="params">(List&lt;Worker&gt; workers)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.workers = workers;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">JSONUtils</span></span>&#123;</span><br><span class="line">	</span><br><span class="line">	<span class="comment">/**</span></span><br><span class="line"><span class="comment">	 * </span></span><br><span class="line"><span class="comment">	 * &lt;/p&gt; 说明：&lt;/p&gt; </span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@param</span> path		读取目录结构的路径，例如："/src/workers.json"</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@return</span>			目录结构</span></span><br><span class="line"><span class="comment">	 * </span></span><br><span class="line"><span class="comment">	 */</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Workers <span class="title">getMap</span><span class="params">(String path)</span> <span class="keyword">throws</span> IOException</span>&#123;</span><br><span class="line">		</span><br><span class="line">		InputStream inputStream = JSONUtils.class.getClassLoader().getResourceAsStream(path);</span><br><span class="line">		String json = readAsString(inputStream);</span><br><span class="line">		JSONObject jsonObject = JSONObject.fromObject(json);</span><br><span class="line">		</span><br><span class="line">		<span class="comment">//修改类型，解决JSON net.sf.ezmorph.bean.MorphDynaBean cannot be cast to com.xxx.xxxx.vo.Work的错误</span></span><br><span class="line">		Map classMap = <span class="keyword">new</span> HashMap();</span><br><span class="line">		classMap.put(<span class="string">"workers"</span>, Worker.class);</span><br><span class="line">		JSONUtils.getMorpherRegistry().registerMorpher(<span class="keyword">new</span> DateMorpher(<span class="keyword">new</span> String[] &#123;<span class="string">"yyyy-MM-dd"</span>, <span class="string">"yyyy-MM-dd HH:mm:ss"</span>&#125;));</span><br><span class="line">		Workers workers = (Workers) JSONObject.toBean(jsonObject, Workers.class, classMap);</span><br><span class="line">		<span class="keyword">return</span> Workers;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">	 * 输出从指定路径+文件名读取到的文件流的字符内容。</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@param</span> inputStream	输入流</span></span><br><span class="line"><span class="comment">	 * <span class="doctag">@throws</span> IOException</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> String <span class="title">readAsString</span><span class="params">(InputStream inputStream)</span><span class="keyword">throws</span> IOException</span>&#123;</span><br><span class="line">		</span><br><span class="line">		BufferedReader reader = <span class="keyword">null</span>;</span><br><span class="line">		StringBuilder sb = <span class="keyword">new</span> StringBuilder();</span><br><span class="line">		String line;</span><br><span class="line">		<span class="keyword">try</span>&#123;</span><br><span class="line">			reader = <span class="keyword">new</span> BufferedReader(<span class="keyword">new</span> InputStreamReader(inputStream, <span class="string">"utf-8"</span>));</span><br><span class="line">			<span class="keyword">while</span>((line = reader.readLine()) != <span class="keyword">null</span>)&#123;</span><br><span class="line">				sb.append(line);</span><br><span class="line">				sb.append(<span class="string">"\r\n"</span>);</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">return</span> sb.toString();</span><br><span class="line">		&#125;<span class="keyword">finally</span>&#123;</span><br><span class="line">			<span class="keyword">if</span>(reader != <span class="keyword">null</span>)&#123;</span><br><span class="line">				<span class="keyword">try</span>&#123;</span><br><span class="line">					reader.close();</span><br><span class="line">				&#125;<span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+
+        
+
+        
+            <div class="full-width auto-padding tags">
+                
+                    <a href="./tags/java/"><i class="fas fa-tag fa-fw"></i>&nbsp;java</a>
+                
+            </div>
+        
+    </section>
+</article>
+
+        </div>
+    
+        <div class='post-wrapper'>
+            <article class="post reveal ">
+    <section class="meta">
+        <h2 class="title">
+            <a href="./2018/10/22/kailLinux的使用/">
+                
+                    kailLinux的使用
+                
+            </a>
+        </h2>
+        <time class="time">
+            <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;2018-10-22
+        </time>
+        
+    
+    <div class='cats'>
+        <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+        
+    </div>
+
+
+    </section>
+
+    <section class="article typo">
+        <h2 id="桌面"><a href="#桌面" class="headerlink" title="桌面"></a>桌面</h2><p><img src="../uploads/kailLinux.png" alt="fd"> </p>
+
+        
+
+        
+            <div class="full-width auto-padding tags">
+                
+                    <a href="./tags/ctf/"><i class="fas fa-tag fa-fw"></i>&nbsp;ctf</a>
+                
+                    <a href="./tags/linux/"><i class="fas fa-tag fa-fw"></i>&nbsp;linux</a>
+                
+            </div>
+        
+    </section>
+</article>
+
+        </div>
+    
+        <div class='post-wrapper'>
+            <article class="post reveal ">
+    <section class="meta">
+        <h2 class="title">
+            <a href="./2018/10/21/2018-10-21-test/">
+                
+                    test
+                
+            </a>
+        </h2>
+        <time class="time">
+            <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;2018-10-21
+        </time>
+        
+    
+    <div class='cats'>
+        <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+        
+    </div>
+
+
+    </section>
+
+    <section class="article typo">
+        <p>test！！</p>
+
+        
+
+        
+    </section>
+</article>
+
+        </div>
+    
+</section>
+
+
+    <br>
+    <div class="prev-next">
+        <div class="prev-next">
+            
+                <a class="prev" rel="prev" href="./">
+                    <section class="post prev" >
+                        <i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;上一页&nbsp;
+                    </section>
+                </a>
+            
+            <p class="current">
+                2 / 5
+            </p>
+            
+                <a class="next" rel="next" href="./page/3/">
+                    <section class="post next">
+                        &nbsp;下一页&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i>
+                    </section>
+                </a>
+            
+
+        </div>
+    </div>
+
+
+
+        </div>
+        <aside class='l_side'>
+            
+
+        </aside>
+        <script>setLoadingBarProgress(60);</script>
+    </div>
+    </div>
+    <footer id="footer" class="clearfix">
+    
+    <br>
+    <div>博客内容遵循 <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="licenses">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></div>
+    <div>本站使用 <a href="https://xaoxuu.com/wiki/material-x/" target="_blank" class="codename">Material X</a> 作为主题，
+		总访问量为 <span id="busuanzi_value_site_pv"><i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span> 次。
+    </div>
+</footer>
+<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
+
+
+    <script>setLoadingBarProgress(80);</script>
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src='//cdn.bootcss.com/node-waves/0.7.5/waves.min.js'></script>
+<script src="//cdn.bootcss.com/scrollReveal.js/3.3.2/scrollreveal.min.js"></script>
+<!-- 访问统计 -->
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+<script src="./js/jquery.fitvids.js"></script>
+
+<script src="./js/search.js"></script>
+<script src="./js/app.js"></script>
+
+
+
+    <script>setLoadingBarProgress(100);</script>
+</body>

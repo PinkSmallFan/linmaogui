@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <title>Tag: mvn | WenChongAndJiaoKou</title>
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="shortcut icon" href="./">
+  <link rel="alternate" href="./atom.xml" title="WenChongAndJiaoKou">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link rel="shortcut icon" href="" />
+  <link rel="icon" href="" />
+  
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  
+  <!-- <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link href='//cdn.bootcss.com/node-waves/0.7.5/waves.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="./style.css">
+  <script>
+    function setLoadingBarProgress(num) {
+      document.getElementById('loading-bar').style.width=num+"%";
+    }
+  </script>
+</head>
+
+<body>
+    <div id="loading-bar-wrapper">
+  <div id="loading-bar"></div>
+</div>
+
+
+    <script>setLoadingBarProgress(20)</script>
+    <header class="l_header">
+	<div class='wrapper'>
+		<div class="nav-main container container--flex">
+			<a class="logo flat-box" href='./' >WenChongAndJiaoKou</a>
+				<div class='menu'>
+					<ul class='h-list'>
+            
+					</ul>
+					<div class='underline'></div>
+				</div>
+
+			
+			<ul class='switcher h-list'>
+				
+				<li class='s-menu'><a class="fas fa-bars fa-fw" href='javascript:void(0)'></a></li>
+			</ul>
+		</div>
+
+		<div class='nav-sub container container--flex'>
+			<a class="logo flat-box"></a>
+			<ul class='switcher h-list'>
+				<li class='s-comment'><a class="fas fa-comments fa-fw flat-box" href='javascript:void(0)'></a></li>
+				<li class='s-top'><a class="fas fa-arrow-circle-up fa-fw flat-box" href='javascript:void(0)'></a></li>
+				<li class='s-toc'><a class="fas fa-list fa-fw flat-box" href='javascript:void(0)'></a></li>
+			</ul>
+		</div>
+	</div>
+</header>
+	<aside class="menu-phone">
+		<nav>
+      <ul>
+          
+      </ul>
+		</nav>
+	</aside>
+
+    <script>setLoadingBarProgress(40);</script>
+    <div class="l_body">
+    <div class='container clearfix'>
+        <div class='l_main'>
+            
+    <script>
+        window.subData= { title:'tag : mvn'}
+    </script>
+
+
+<section class="post-list">
+    
+        <div class='post-wrapper'>
+            <article class="post revealno-title">
+                <section class="meta">
+                    <h2 class="title" style="color:#EF503A">
+                        <span class="fas fa-exclamation-triangle"></span>
+                        还剩最后一步就成功了
+                    </h2>
+                    <p>
+                        请按照下面的指示进行操作：
+                    </p>
+                </section>
+                <iframe frameborder="no" width=100% height=600 src="https://xaoxuu.com/wiki/material-x/#/?id=主题配置"></iframe>
+            </article>
+        </div>
+    
+    
+        <div class='post-wrapper'>
+            <article class="post reveal ">
+    <section class="meta">
+        <h2 class="title">
+            <a href="./2018/10/12/mvn的使用/">
+                
+                    mvn的使用
+                
+            </a>
+        </h2>
+        <time class="time">
+            <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;2018-10-12
+        </time>
+        
+    
+    <div class='cats'>
+        <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+        
+    </div>
+
+
+    </section>
+
+    <section class="article typo">
+        <h2 id="mvn-打包"><a href="#mvn-打包" class="headerlink" title="mvn 打包"></a>mvn 打包</h2><h3 id="本地打包jar"><a href="#本地打包jar" class="headerlink" title="本地打包jar"></a>本地打包jar</h3><h4 id="测试，跳过test"><a href="#测试，跳过test" class="headerlink" title="测试，跳过test"></a>测试，跳过test</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mvn clean install package -Dmaven.test.skip=true	# mvn打包跳过test例程。</span><br></pre></td></tr></table></figure>
+<h4 id="测试-test"><a href="#测试-test" class="headerlink" title="测试+test"></a>测试+test</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">在含有pom的目录上输入mvn pacakge，既可以打包，其中包括Test例程（JUnit会运行进行测试）</span></span><br><span class="line">mvn package</span><br></pre></td></tr></table></figure>
+<h3 id="打包到nexus"><a href="#打包到nexus" class="headerlink" title="打包到nexus"></a>打包到nexus</h3><h4 id="mvn命令打包"><a href="#mvn命令打包" class="headerlink" title="mvn命令打包"></a>mvn命令打包</h4><p>​    设置</p>
+<p>​    DgroupId Group</p>
+<p>​    DartifactId  Artifact</p>
+<p>​    Dversion 版本信息</p>
+<p>​    Dpackaging 发布类型</p>
+<p>​    Dfile 本地文件路径</p>
+<p>​    Durl 发布url</p>
+<p>​    DrepositoryId 仓库id （可以参考setting里边的server节点的id）</p>
+<p>​    运行下命令就OK</p>
+<p>​    mvn deploy:deploy-file -DgroupId=net.netca.xxx -DartifactId=NetcaXXX -Dversion=1.0.3 -Dpackaging=jar -Dfile=C:/tmp/jar/NetcaXXX-1.0.3.jar -Durl=<a href="http://192.168.XX.XX:XX/nexus/content/repositories/thirdparty/" target="_blank" rel="noopener">http://192.168.XX.XX:XX/nexus/content/repositories/thirdparty/</a> -DrepositoryId=nexus-thirdparty</p>
+<h4 id="nexus界面打包"><a href="#nexus界面打包" class="headerlink" title="nexus界面打包"></a>nexus界面打包</h4><pre><code>1. Sonatype侧边栏：Views/Respositories-Responsitories
+2. 页面栏：Respositories-3rd party
+3. 功能栏：3rd party-Artifact Upload
+4. 操作：
+ ​    1. Select GAV Definition Source：选择From POM
+ ​    2. Select POM to Upload(button)：选择本地项目需要打包成jar，依赖的pom文件
+ ​    3. Select Artifact(s) for Upload(button)：选择本地项目打包好的jar包
+ ​    4. Add Artifact：将jar包进行添加到上传列表
+ ​    5. Upload Aritifact(s)：上传jar包
+</code></pre><p><img src="https://pinksmallfan.github.io/WenChongAndJiaoKou/uploads\nexus打包.png" alt="nexus打包"></p>
+<h2 id="常见错误"><a href="#常见错误" class="headerlink" title="常见错误"></a>常见错误</h2><h3 id="jar依赖冲突"><a href="#jar依赖冲突" class="headerlink" title="jar依赖冲突"></a>jar依赖冲突</h3><p>​    当引用第三方服务的时候，第三方服务的A.jar引用放置在了jdk的jre-lib-ext下，但是项目为maven项目，maven项目同时也包含了有A.jar。</p>
+<p>解决方案：</p>
+<pre><code>1. 换一个没有A.jar的jdk，通过maven来引用A.jar。
+2. 如果jdk不能替换，那么可以尝试maven的exclusions，去除自带的引用。
+举例如下：
+</code></pre><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.axis2<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>axis2-kernel<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.7.6<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">exclusions</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">exclusion</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>javax.servlet<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>servlet-api<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">exclusion</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">exclusions</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="Unauthorized"><a href="#Unauthorized" class="headerlink" title="Unauthorized"></a>Unauthorized</h3><pre><code>1. 描述：当你想上传jar包到仓库nexus-thirdparty时，却发现，通过mvn命令行的方式上传失败，出现&quot;Unauthorized&quot;（没有权限）的错误。
+2. 原因：本地setting配置文件（一般是C:\Users\用户名\\.m2\settings.xml），没有配置好对应server id为nexus-thirdparty的账号密码
+3. 解决方案：在setting.xml文件添加server节点
+</code></pre><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">server</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">id</span>&gt;</span>nexus-thirdparty<span class="tag">&lt;/<span class="name">id</span>&gt;</span>            </span><br><span class="line">	<span class="tag">&lt;<span class="name">username</span>&gt;</span>username<span class="tag">&lt;/<span class="name">username</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">password</span>&gt;</span>password<span class="tag">&lt;/<span class="name">password</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">server</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="pom-xml详解"><a href="#pom-xml详解" class="headerlink" title="pom.xml详解"></a>pom.xml详解</h2>
+        
+
+        
+            <div class="full-width auto-padding tags">
+                
+                    <a href="./tags/配置/"><i class="fas fa-tag fa-fw"></i>&nbsp;配置</a>
+                
+                    <a href="./tags/mvn/"><i class="fas fa-tag fa-fw"></i>&nbsp;mvn</a>
+                
+            </div>
+        
+    </section>
+</article>
+
+        </div>
+    
+</section>
+
+
+
+        </div>
+        <aside class='l_side'>
+            
+
+        </aside>
+        <script>setLoadingBarProgress(60);</script>
+    </div>
+    </div>
+    <footer id="footer" class="clearfix">
+    
+    <br>
+    <div>博客内容遵循 <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="licenses">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></div>
+    <div>本站使用 <a href="https://xaoxuu.com/wiki/material-x/" target="_blank" class="codename">Material X</a> 作为主题，
+		总访问量为 <span id="busuanzi_value_site_pv"><i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span> 次。
+    </div>
+</footer>
+<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
+
+
+    <script>setLoadingBarProgress(80);</script>
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src='//cdn.bootcss.com/node-waves/0.7.5/waves.min.js'></script>
+<script src="//cdn.bootcss.com/scrollReveal.js/3.3.2/scrollreveal.min.js"></script>
+<!-- 访问统计 -->
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+<script src="./js/jquery.fitvids.js"></script>
+
+<script src="./js/search.js"></script>
+<script src="./js/app.js"></script>
+
+
+
+    <script>setLoadingBarProgress(100);</script>
+</body>
