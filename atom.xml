@@ -40,6 +40,28 @@
   </entry>
   
   <entry>
+    <title>about</title>
+    <link href="http://wenchongjiaokou.info/2018/11/15/about/about/"/>
+    <id>http://wenchongjiaokou.info/2018/11/15/about/about/</id>
+    <published>2018-11-15T14:33:34.855Z</published>
+    <updated>2018-11-15T14:33:57.984Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://wenchongjiaokou.info">blog</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;http://wenchongjiaokou.info&quot;&gt;blog&lt;/a&gt;&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title></title>
     <link href="http://wenchongjiaokou.info/2018/11/14/%E6%AF%8F%E5%A4%A9%E4%B8%80%E7%AF%87(%E5%A4%A7%E7%BA%B2)/"/>
     <id>http://wenchongjiaokou.info/2018/11/14/每天一篇(大纲)/</id>
@@ -469,28 +491,6 @@
       <category term="ctf" scheme="http://wenchongjiaokou.info/tags/ctf/"/>
     
       <category term="linux" scheme="http://wenchongjiaokou.info/tags/linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>test</title>
-    <link href="http://wenchongjiaokou.info/2018/10/21/2018-10-21-test/"/>
-    <id>http://wenchongjiaokou.info/2018/10/21/2018-10-21-test/</id>
-    <published>2018-10-21T13:59:00.000Z</published>
-    <updated>2018-10-21T13:59:15.269Z</updated>
-    
-    <content type="html"><![CDATA[<p>test！！</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;test！！&lt;/p&gt;
-
-      
-    
-    </summary>
-    
     
   </entry>
   
